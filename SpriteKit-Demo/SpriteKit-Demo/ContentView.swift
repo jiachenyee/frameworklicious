@@ -10,9 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Button("Lol") {
-                print("LOL")
-            }
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
