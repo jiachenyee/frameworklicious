@@ -2,6 +2,7 @@
 ## Explore iOS Device Frameworks
 
 ## Technologies & Sample Projects
+### Day 1
 - HealthKit: 
   - [demo project](HealthKit), [developer documentation](http://developer.apple.com/documentation/healthkit)
 - Machine Learning:
