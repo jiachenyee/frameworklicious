@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  SpriteKit-Demo
+//  Demo Project
 //
-//  Created by Jia Chen Yee on 09/06/23.
+//  Created by Jia Chen Yee on 12/06/23.
 //
 
 import SwiftUI

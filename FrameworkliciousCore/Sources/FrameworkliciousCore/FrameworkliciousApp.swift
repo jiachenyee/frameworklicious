@@ -28,7 +28,7 @@ public struct FrameworkliciousApp<Content: View>: View {
                 VStack(alignment: .leading) {
                     ZStack {
                         Image(systemName: framework.icon)
-                            .foregroundColor(.white.opacity(0.5))
+                            .foregroundColor(.white.opacity(0.25))
                             .font(.system(size: 128))
                             .frame(maxWidth: .infinity, alignment: .trailing)
                         
