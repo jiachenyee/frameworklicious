@@ -108,6 +108,7 @@ public struct FrameworkliciousApp<Content: View>: View {
                     viewModel.lastInteractionDate = .now
                 }
         )
+        .preferredColorScheme(.dark)
     }
 }
 
