@@ -77,8 +77,6 @@ extension CameraPreview: AVCaptureVideoDataOutputSampleBufferDelegate {
             guard recognizedPoints.count > 0 else { return }
             
             DispatchQueue.main.async {
-                print(recognizedPoints)
-                
                 var points: [VNRecognizedPointKey: CGPoint] = [:]
                 
                 for point in recognizedPoints {

@@ -23,10 +23,10 @@ class FrameworkliciousViewModel: ObservableObject {
     @Published var lastInteractionDate: Date = .now {
         didSet {
             guard isFrameworkPresented else { return }
-            timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
-                self.isFrameworkPresented = false
-            }
+//            timer?.invalidate()
+//            timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
+//                self.isFrameworkPresented = false
+//            }
         }
     }
 }
