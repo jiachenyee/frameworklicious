@@ -14,40 +14,101 @@ struct PoseTrackerView: View {
 
     var body: some View {
         ZStack {
-            CameraView(detectedPoints: $poseTracker.detectedPoints)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            Color.black
                 .edgesIgnoringSafeArea(.all)
             
+            // Display Vision camera view
+            CameraView(detectedPoints: $poseTracker.detectedPoints) { photo in
+                poseTracker.setRandomPhoto(photo)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.all)
+            .opacity(0.1)
+            
             GeometryReader { geometry in
-                ForEach(poseTracker.selectedSections, id: \.0) { content in
-                    Rectangle()
-                        .fill(content.hand.color.opacity(0.3))
-                        .frame(width: geometry.size.width / 3,
-                               height: geometry.size.height / 5)
-                        .offset(x: CGFloat(content.position.x) * geometry.size.width / 3,
-                                y: CGFloat(content.position.y) * geometry.size.height / 5)
+                if poseTracker.userState == .started {
+                    // Create hand hover highlight rectangles
+                    ForEach(poseTracker.selectedSections, id: \.0) { content in
+                        PositionedRectangle(targetPosition: content.position,
+                                            color: content.hand.color.opacity(0.3),
+                                            geometry: geometry)
+                    }
+                    
+                    // Create target rectangle
+                    PositionedRectangle(targetPosition: poseTracker.targetPosition,
+                                        color: poseTracker.targetHand.color,
+                                        geometry: geometry)
                 }
-                Rectangle()
-                    .fill(poseTracker.targetHand.color)
-                    .frame(width: geometry.size.width / 3,
-                           height: geometry.size.height / 5)
-                    .offset(x: CGFloat(poseTracker.targetPosition.x) * geometry.size.width / 3,
-                            y: CGFloat(poseTracker.targetPosition.y) * geometry.size.height / 5)
+                
+                PosePreviewView(detectedPoints: poseTracker.detectedPoints)
                     .onAppear {
                         poseTracker.viewSize = geometry.size
                     }
             }
             
-            ForEach(poseTracker.detectedPoints.map({
-                (key: $0, value: $1)
-            }), id: \.key) { point in
-                ZStack {
-                    
-                    Circle()
-                        .fill(Hand(point.key)?.color ?? .white)
+            switch poseTracker.userState {
+            case .waitingToStart:
+                VStack {
+                    Image(systemName: "hands.clap.fill")
+                        .imageScale(.large)
+                    Text("Clap to start")
+                        .font(.headline)
+                    Text("You have 20s")
+                    Text("Hit the blue and red squares using your wrists!")
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 20, height: 20)
-                .position(point.value)
+                .frame(width: 200, height: 200)
+                .padding()
+                .background(.thinMaterial)
+                .cornerRadius(8)
+                
+            case .started:
+                ZStack {
+                    Gauge(value: Double(poseTracker.gameSeconds), in: 0...20.0) {
+                        EmptyView()
+                    } currentValueLabel: {
+                        EmptyView()
+                    }
+                    .gaugeStyle(.accessoryCircularCapacity)
+
+                    Text("\(poseTracker.gameScore)")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .padding(.top, 64)
+            case .gameOver:
+                ZStack {
+                    Color.black
+                    VStack {
+                        Text("Game Over")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
+                        Text("\(poseTracker.gameScore)")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        if let latestImage = poseTracker.randomPhoto {
+                            ZStack(alignment: .bottomLeading) {
+                                Image(uiImage: latestImage)
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("FRAMEWORKLICIOUS @ ILB")
+                                    .font(.system(size: 18, design: .monospaced))
+                                    .foregroundColor(.white)
+                                    .background(.black)
+                                    .padding()
+                            }
+                        }
+                        
+                        Button("Play Again") {
+                            poseTracker.userState = .waitingToStart
+                        }
+                    }
+                    .padding()
+                    .padding()
+                }
             }
         }
     }

@@ -15,6 +15,9 @@
 		765490172A39A98C0074CC51 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490162A39A98C0074CC51 /* CameraView.swift */; };
 		7654901A2A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490192A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift */; };
 		7654901C2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654901B2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift */; };
+		765490262A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */; };
+		765490282A3ABA320074CC51 /* PositionedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490272A3ABA320074CC51 /* PositionedRectangle.swift */; };
+		7654902A2A3ABB4E0074CC51 /* PosePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490292A3ABB4E0074CC51 /* PosePreviewView.swift */; };
 		76650E442A372D2C00181407 /* PoseTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76650E432A372D2C00181407 /* PoseTrackerView.swift */; };
 		76650E462A372D4A00181407 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76650E452A372D4A00181407 /* CameraPreview.swift */; };
 		767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */; };
@@ -33,6 +36,9 @@
 		765490162A39A98C0074CC51 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		765490192A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseTrackerManager+Clapping.swift"; sourceTree = "<group>"; };
 		7654901B2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseTrackerManager+Selection.swift"; sourceTree = "<group>"; };
+		765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
+		765490272A3ABA320074CC51 /* PositionedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionedRectangle.swift; sourceTree = "<group>"; };
+		765490292A3ABB4E0074CC51 /* PosePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosePreviewView.swift; sourceTree = "<group>"; };
 		76650E432A372D2C00181407 /* PoseTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTrackerView.swift; sourceTree = "<group>"; };
 		76650E452A372D4A00181407 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		767FF4292A36B339000F77F7 /* Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +94,11 @@
 			children = (
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
 				76650E432A372D2C00181407 /* PoseTrackerView.swift */,
+				765490292A3ABB4E0074CC51 /* PosePreviewView.swift */,
+				765490272A3ABA320074CC51 /* PositionedRectangle.swift */,
 				765490162A39A98C0074CC51 /* CameraView.swift */,
 				76650E452A372D4A00181407 /* CameraPreview.swift */,
+				765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,10 +235,13 @@
 				7654901A2A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift in Sources */,
 				765490112A39A91F0074CC51 /* PoseTrackerManager.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				765490262A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */,
+				765490282A3ABA320074CC51 /* PositionedRectangle.swift in Sources */,
 				7654901C2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift in Sources */,
 				765490172A39A98C0074CC51 /* CameraView.swift in Sources */,
 				7654900A2A39A8E60074CC51 /* UserState.swift in Sources */,
 				765490142A39A9590074CC51 /* CGPoint.swift in Sources */,
+				7654902A2A3ABB4E0074CC51 /* PosePreviewView.swift in Sources */,
 				76650E462A372D4A00181407 /* CameraPreview.swift in Sources */,
 				7654900E2A39A9040074CC51 /* Hand.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,

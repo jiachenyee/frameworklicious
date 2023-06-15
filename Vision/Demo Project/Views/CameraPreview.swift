@@ -11,10 +11,19 @@ import AVFoundation
 import UIKit
 
 final class CameraPreview: UIView {
+    
+    /// Set up `AVCaptureSession`
     private let captureSession = AVCaptureSession()
+    
+    /// Set up video output
     private let videoOutput = AVCaptureVideoDataOutput()
+    
+    /// Send detected points back to the view/view model
     var detectedPointsCallback: (([VNRecognizedPointKey: CGPoint]) -> Void)?
+    var randomPhotoCallback: ((UIImage) -> Void)?
 
+    private var photoOutput = AVCapturePhotoOutput()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCaptureSession()
@@ -25,8 +34,14 @@ final class CameraPreview: UIView {
         setupCaptureSession()
     }
 
+    /// Get camera size
     var size: CGSize!
     
+    /// Set up AVCaptureSession
+    ///
+    /// - Create capture device
+    /// - Set up with inputs
+    /// - Set up camera preview layer
     private func setupCaptureSession() {
         captureSession.beginConfiguration()
 
@@ -41,6 +56,8 @@ final class CameraPreview: UIView {
 
         videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(videoOutput)
+        
+        captureSession.addOutput(photoOutput)
 
         captureSession.commitConfiguration()
         
@@ -51,6 +68,10 @@ final class CameraPreview: UIView {
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.videoGravity = .resizeAspectFill
         layer.addSublayer(previewLayer)
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+            self.takePhoto()
+        }
     }
 
     override func layoutSubviews() {
@@ -59,43 +80,21 @@ final class CameraPreview: UIView {
             previewLayer.frame = bounds
         }
     }
+    
+    func takePhoto() {
+        let settings = AVCapturePhotoSettings()
+        photoOutput.capturePhoto(with: settings, delegate: self)
+    }
 }
 
-extension CameraPreview: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        
-        let requestOptions: [VNImageOption: Any] = [:]
-        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .leftMirrored, options: requestOptions)
-
-        let poseRequest = VNDetectHumanBodyPoseRequest { request, error in
-            guard let observations = request.results as? [VNRecognizedPointsObservation] else { return }
-            let recognizedPoints = observations.flatMap { observation in
-                observation.availableKeys.map { try? observation.recognizedPoint(forKey: $0) }
-            }.compactMap { $0 }
+extension CameraPreview: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        if let error = error {
+            print("Error capturing photo: \(error)")
+        } else if let imageData = photo.fileDataRepresentation(),
+                  let image = UIImage(data: imageData) {
             
-            guard recognizedPoints.count > 0 else { return }
-            
-            DispatchQueue.main.async {
-                var points: [VNRecognizedPointKey: CGPoint] = [:]
-                
-                for point in recognizedPoints {
-                    let convertedX = CGFloat(point.location.x) * self.bounds.width
-                    let convertedY = CGFloat(1 - point.location.y) * self.bounds.height
-                    
-                    if CGPoint(x: convertedX, y: convertedY) != .zero {
-                        points[point.identifier] = CGPoint(x: convertedX, y: convertedY)
-                    }
-                }
-                
-                self.detectedPointsCallback?(points)
-            }
-        }
-
-        do {
-            try imageRequestHandler.perform([poseRequest])
-        } catch {
-            print("Error performing pose detection: \(error)")
+            self.randomPhotoCallback?(image)
         }
     }
 }

@@ -12,6 +12,8 @@ import Vision
 
 struct CameraView: UIViewRepresentable {
     @Binding var detectedPoints: [VNRecognizedPointKey: CGPoint]
+    
+    var randomPhotoCallback: ((UIImage) -> Void)?
 
     func makeUIView(context: Context) -> CameraPreview {
         let cameraPreview = CameraPreview()
@@ -20,6 +22,13 @@ struct CameraView: UIViewRepresentable {
                 self.detectedPoints = points
             }
         }
+        
+        cameraPreview.randomPhotoCallback = { image in
+            DispatchQueue.main.async {
+                randomPhotoCallback?(image)
+            }
+        }
+        
         return cameraPreview
     }
 

@@ -27,10 +27,12 @@ extension PoseTrackerManager {
         
         var positions: [HandPosition] = []
         
+        // Get positions for left wrist and append to `positions`
         if let leftPosition = getPosition(for: .left, withSize: viewSize) {
             positions.append((.left, leftPosition))
         }
         
+        // Get positions for right wrist and append to `positions`
         if let rightPosition = getPosition(for: .right, withSize: viewSize) {
             positions.append((.right, rightPosition))
         }
@@ -67,14 +69,26 @@ extension PoseTrackerManager {
     /// - Parameter positions: An array of selected positions.
     fileprivate func handlePointHit(_ positions: [HandPosition]) {
         var potentialPositions = HitPosition.allCases
+        
+        // Filter potential positions to remove all positions
+        //   are where the user's hands are currently at, this
+        //   will help to make it more challenging.
         potentialPositions.removeAll { position in
             positions.contains { (_, hitPosition) in
                 hitPosition == position
             }
         }
         
+        // Pick a random position from the filtered array of
+        //   potential positions
         targetPosition = potentialPositions.randomElement()!
+        
+        // Set the next target hand to a random hand, either
+        //   left or right
         targetHand = .random
+        
+        // Increment game score
+        gameScore += 1
     }
     
     /// Get the position of a specific hand from the raw vision data
@@ -84,9 +98,9 @@ extension PoseTrackerManager {
     /// - Returns: The hit position of the selected hand
     fileprivate func getPosition(for hand: Hand, withSize viewSize: CGSize) -> HitPosition? {
         
-        if let leftWrist = detectedPoints[hand.visionKey] {
-            let x = floor(leftWrist.x / (viewSize.width / 3))
-            let y = floor(leftWrist.y / (viewSize.height / 5))
+        if let wrist = detectedPoints[hand.visionKey] {
+            let x = floor(wrist.x / (viewSize.width / 3))
+            let y = floor(wrist.y / (viewSize.height / 5))
             
             if let position = HitPosition(x: Int(x), y: Int(y)) {
                 return position
