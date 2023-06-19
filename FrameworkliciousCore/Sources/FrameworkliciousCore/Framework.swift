@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import CoreLocation
 @available(iOS 16.0, *)
 @available(macOS, unavailable)
 @available(tvOS, unavailable)
@@ -201,5 +201,28 @@ public enum Framework {
         case .gameKit:
             return "GameKit allows you to implement Game Center social-gaming network features. Game Center is an Apple service that provides a single account that identifies players across all their games and devices. After players sign in to Game Center on their device, they can access their friends and use Game Center features you implement."
         }
+    }
+    
+    static let all: [Self] = [
+        .healthKit,
+        .speech,
+        .machineLearning,
+        .vision,
+        .watch,
+        .multipeerConnectivity,
+        .shareplay,
+        .coreHaptics,
+        .siriKit,
+        .messages,
+        .coreLocation,
+        .liveActivities,
+        .pencilKit,
+        .coreMotion,
+        .gameKit
+    ]
+    
+    // Index used for iBeacon
+    var index: UInt16 {
+        UInt16(Self.all.firstIndex(of: self)!)
     }
 }

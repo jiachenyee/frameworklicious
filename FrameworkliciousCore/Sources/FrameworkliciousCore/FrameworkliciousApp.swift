@@ -10,6 +10,7 @@ public struct FrameworkliciousApp<Content: View>: View {
     
     @ViewBuilder public var content: Content
     
+    @StateObject var beaconManager = BeaconManager()
     @StateObject var viewModel = FrameworkliciousViewModel()
     
     public init(framework: Framework, content: (() -> Content)) {
@@ -102,12 +103,9 @@ public struct FrameworkliciousApp<Content: View>: View {
                 }
             }
         }
-        .simultaneousGesture(
-            TapGesture()
-                .onEnded { _ in
-                    viewModel.lastInteractionDate = .now
-                }
-        )
+        .onAppear {
+            beaconManager.setUp(framework: framework)
+        }
     }
 }
 
