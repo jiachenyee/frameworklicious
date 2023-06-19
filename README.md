@@ -17,3 +17,19 @@
   - [demo project](SharePlay), [developer documentation](http://developer.apple.com/documentation/shareplay)
 - CoreHaptics: 
   - [demo project](Haptics), [developer documentation](http://developer.apple.com/documentation/corehaptics/)
+
+### Day 2
+- SiriKit: 
+  - [demo project](Siri), [developer documentation](http://developer.apple.com/documentation/sirikit)
+- Messages:
+  - [demo project](Messages), [developer documentation](http://developer.apple.com/documentation/messages)
+- CoreLocation: 
+  - [demo project](Location), [developer documentation](http://developer.apple.com/documentation/corelocation)
+- Live Activity & WidgetKit: 
+  - [demo project](Live%20Activity), [developer documentation](https://developer.apple.com/documentation/widgetkit)
+- PencilKit: 
+  - [demo project](PencilKit), [developer documentation](http://developer.apple.com/documentation/pencilkit)
+- CoreMotion: 
+  - [demo project](CoreMotion), [developer documentation](http://developer.apple.com/documentation/coremotion)
+- GameKit: 
+  - [demo project](GameKit), [developer documentation](http://developer.apple.com/documentation/gamekit/)
