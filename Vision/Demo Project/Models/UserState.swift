@@ -9,6 +9,7 @@ import Foundation
 
 enum UserState: Equatable {
     case waitingToStart
+    case countdown
     case started
     case gameOver
 }

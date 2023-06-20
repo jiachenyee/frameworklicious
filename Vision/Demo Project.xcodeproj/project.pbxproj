@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76336A332A414494008EB603 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76336A322A414494008EB603 /* CountdownView.swift */; };
 		7654900A2A39A8E60074CC51 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490092A39A8E60074CC51 /* UserState.swift */; };
 		7654900C2A39A8F40074CC51 /* HitPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654900B2A39A8F40074CC51 /* HitPosition.swift */; };
 		7654900E2A39A9040074CC51 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654900D2A39A9040074CC51 /* Hand.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76336A322A414494008EB603 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		765490092A39A8E60074CC51 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		7654900B2A39A8F40074CC51 /* HitPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitPosition.swift; sourceTree = "<group>"; };
 		7654900D2A39A9040074CC51 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				76336A322A414494008EB603 /* CountdownView.swift */,
 				76650E432A372D2C00181407 /* PoseTrackerView.swift */,
 				765490292A3ABB4E0074CC51 /* PosePreviewView.swift */,
 				765490272A3ABA320074CC51 /* PositionedRectangle.swift */,
@@ -241,6 +244,7 @@
 				765490172A39A98C0074CC51 /* CameraView.swift in Sources */,
 				7654900A2A39A8E60074CC51 /* UserState.swift in Sources */,
 				765490142A39A9590074CC51 /* CGPoint.swift in Sources */,
+				76336A332A414494008EB603 /* CountdownView.swift in Sources */,
 				7654902A2A3ABB4E0074CC51 /* PosePreviewView.swift in Sources */,
 				76650E462A372D4A00181407 /* CameraPreview.swift in Sources */,
 				7654900E2A39A9040074CC51 /* Hand.swift in Sources */,

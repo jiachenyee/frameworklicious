@@ -61,7 +61,8 @@ struct PoseTrackerView: View {
                 .padding()
                 .background(.thinMaterial)
                 .cornerRadius(8)
-                
+            case .countdown:
+                CountdownView(state: $poseTracker.userState)
             case .started:
                 ZStack {
                     Gauge(value: Double(poseTracker.gameSeconds), in: 0...20.0) {

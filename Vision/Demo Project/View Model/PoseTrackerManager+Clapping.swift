@@ -73,14 +73,16 @@ extension PoseTrackerManager {
             gameScore = 0
             gameSeconds = 0
             
-            userState = .started
+            userState = .countdown
             
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] timer in
-                gameSeconds += 1
-                
-                if gameSeconds == 20 {
-                    timer.invalidate()
-                    userState = .gameOver
+            Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { _ in
+                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] timer in
+                    gameSeconds += 1
+                    
+                    if gameSeconds == 20 {
+                        timer.invalidate()
+                        userState = .gameOver
+                    }
                 }
             }
         }

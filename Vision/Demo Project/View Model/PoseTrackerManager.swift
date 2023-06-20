@@ -83,6 +83,8 @@ class PoseTrackerManager: ObservableObject {
             checkSelection()
         case .gameOver:
             break
+        case .countdown:
+            break
         }
         
         updatePreviousPoints()
