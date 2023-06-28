@@ -13,7 +13,7 @@ struct Demo_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             FrameworkliciousApp(framework: .coreLocation) {
-                ContentView()
+                ContentView(framework: .coreLocation)
             }
         }
     }

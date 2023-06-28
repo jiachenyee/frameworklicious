@@ -28,7 +28,7 @@ public enum Framework {
     case coreMotion
     case gameKit
     
-    var name: String {
+    public var name: String {
         switch self {
         case .healthKit:
             return "HealthKit"
@@ -63,7 +63,7 @@ public enum Framework {
         }
     }
     
-    var subtitle: String {
+    public var subtitle: String {
         switch self {
         case .healthKit:
             return "Integrate with the Health App"
@@ -98,7 +98,7 @@ public enum Framework {
         }
     }
     
-    var icon: String {
+    public var icon: String {
         switch self {
         case .healthKit:
             return "heart.text.square"
@@ -133,7 +133,7 @@ public enum Framework {
         }
     }
     
-    var color: Color {
+    public var color: Color {
         switch self {
         case .healthKit:
             return .red
@@ -168,7 +168,7 @@ public enum Framework {
         }
     }
     
-    var description: String {
+    public var description: String {
         switch self {
         case .healthKit:
             return "HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps can access and share the user's health data allowing them to create personalized health and fitness experiences.\n\nHealthKit apps take a collaborative approach to building this experience. Your app doesn’t need to provide all of these features. Instead, you can focus just on the subset of tasks that most interests you."

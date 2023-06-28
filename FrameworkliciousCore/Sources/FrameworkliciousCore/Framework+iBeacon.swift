@@ -9,10 +9,8 @@ import Foundation
 import CoreLocation
 
 @available(iOS 16.0, *)
-extension Framework {
-    init?(from beacon: CLBeaconRegion) {
-        guard let intValue = beacon.minor?.intValue else { return nil }
-        
-        self = Self.all[intValue]
+public extension Framework {
+    init?(from beacon: CLBeacon) {
+        self = Self.all[beacon.minor.intValue]
     }
 }

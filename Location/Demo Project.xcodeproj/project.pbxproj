@@ -12,6 +12,8 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		9B0DCE352A4C291700D38E77 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0DCE342A4C291700D38E77 /* ViewModel.swift */; };
+		9B0DCE372A4C295F00D38E77 /* ViewModel+CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0DCE362A4C295F00D38E77 /* ViewModel+CoreLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		9B0DCE342A4C291700D38E77 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9B0DCE362A4C295F00D38E77 /* ViewModel+CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+CoreLocation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
-				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
+				9B0DCE342A4C291700D38E77 /* ViewModel.swift */,
+				9B0DCE362A4C295F00D38E77 /* ViewModel+CoreLocation.swift */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
+				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 			);
 			path = "Demo Project";
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0DCE372A4C295F00D38E77 /* ViewModel+CoreLocation.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				9B0DCE352A4C291700D38E77 /* ViewModel.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +298,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
-				DEVELOPMENT_TEAM = 9W63WN9LG4;
+				DEVELOPMENT_TEAM = AU84RKKUXN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = iBeacon;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = iBeacon;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = iBeacon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,11 +330,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
-				DEVELOPMENT_TEAM = 9W63WN9LG4;
+				DEVELOPMENT_TEAM = AU84RKKUXN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = iBeacon;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = iBeacon;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = iBeacon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
