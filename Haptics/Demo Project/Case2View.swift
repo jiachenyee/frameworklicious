@@ -21,10 +21,7 @@ struct Case2View: View {
             }
         }
         .navigationTitle("Physical Contact")
-        .onDisappear {
-            // close the engine
-            
-        }
+        
     }
 }
 

@@ -109,4 +109,34 @@ class HapticsManager: ObservableObject {
         }
     }
     
+    func playBounceHaptic() {
+        // check if the device do support Core Haptics
+        guard supportHaptics else { return }
+        
+        // create events and its parameters
+        let event1 = CHHapticEvent(eventType: .hapticTransient, parameters: [
+            CHHapticEventParameter(parameterID: .hapticIntensity, value: 1.0),
+            CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.3)], relativeTime: 1.15)
+        
+        let event2 = CHHapticEvent(eventType: .hapticTransient, parameters: [
+            CHHapticEventParameter(parameterID: .hapticIntensity, value: 0.8),
+            CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.3)], relativeTime: 1.65)
+        
+        let event3 = CHHapticEvent(eventType: .hapticTransient, parameters: [
+            CHHapticEventParameter(parameterID: .hapticIntensity, value: 0.3),
+            CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.2)], relativeTime: 2.0)
+        
+        // create pattern, add events into pattern, then play
+        do {
+            let pattern = try CHHapticPattern(events: [event1, event2, event3], parameters: [])
+            
+            let player = try engine?.makePlayer(with: pattern)
+            
+            try player?.start(atTime: CHHapticTimeImmediate)
+            
+        } catch {
+            print("Failed to play pattern \(error.localizedDescription)")
+        }
+    }
+    
 }
