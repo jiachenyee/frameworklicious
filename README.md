@@ -17,6 +17,10 @@
   - [demo project](SharePlay), [developer documentation](http://developer.apple.com/documentation/shareplay)
 - CoreHaptics: 
   - [demo project](Haptics), [developer documentation](http://developer.apple.com/documentation/corehaptics/)
+- SwiftUI Animations: 
+  - [demo project](SwiftUI%20Animations), [developer documentation](http://developer.apple.com/documentation/swiftui/animations)
+- Augmented Reality: 
+  - [demo project](Augmented%20Reality), [developer documentation](http://developer.apple.com/documentation/realitykit)
 
 ### Day 2
 - SiriKit: 

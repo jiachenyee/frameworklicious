@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76336A332A414494008EB603 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76336A322A414494008EB603 /* CountdownView.swift */; };
+		7654900A2A39A8E60074CC51 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490092A39A8E60074CC51 /* UserState.swift */; };
+		7654900C2A39A8F40074CC51 /* HitPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654900B2A39A8F40074CC51 /* HitPosition.swift */; };
+		7654900E2A39A9040074CC51 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654900D2A39A9040074CC51 /* Hand.swift */; };
+		765490112A39A91F0074CC51 /* PoseTrackerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490102A39A91F0074CC51 /* PoseTrackerManager.swift */; };
+		765490142A39A9590074CC51 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490132A39A9590074CC51 /* CGPoint.swift */; };
+		765490172A39A98C0074CC51 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490162A39A98C0074CC51 /* CameraView.swift */; };
+		7654901A2A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490192A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift */; };
+		7654901C2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654901B2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift */; };
+		765490262A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */; };
+		765490282A3ABA320074CC51 /* PositionedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490272A3ABA320074CC51 /* PositionedRectangle.swift */; };
+		7654902A2A3ABB4E0074CC51 /* PosePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765490292A3ABB4E0074CC51 /* PosePreviewView.swift */; };
+		76650E442A372D2C00181407 /* PoseTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76650E432A372D2C00181407 /* PoseTrackerView.swift */; };
+		76650E462A372D4A00181407 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76650E452A372D4A00181407 /* CameraPreview.swift */; };
 		767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */; };
 		767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FF42E2A36B339000F77F7 /* ContentView.swift */; };
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
@@ -15,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76336A322A414494008EB603 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		765490092A39A8E60074CC51 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		7654900B2A39A8F40074CC51 /* HitPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitPosition.swift; sourceTree = "<group>"; };
+		7654900D2A39A9040074CC51 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		765490102A39A91F0074CC51 /* PoseTrackerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTrackerManager.swift; sourceTree = "<group>"; };
+		765490132A39A9590074CC51 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		765490162A39A98C0074CC51 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		765490192A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseTrackerManager+Clapping.swift"; sourceTree = "<group>"; };
+		7654901B2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseTrackerManager+Selection.swift"; sourceTree = "<group>"; };
+		765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
+		765490272A3ABA320074CC51 /* PositionedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionedRectangle.swift; sourceTree = "<group>"; };
+		765490292A3ABB4E0074CC51 /* PosePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosePreviewView.swift; sourceTree = "<group>"; };
+		76650E432A372D2C00181407 /* PoseTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTrackerView.swift; sourceTree = "<group>"; };
+		76650E452A372D4A00181407 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		767FF4292A36B339000F77F7 /* Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_ProjectApp.swift; sourceTree = "<group>"; };
 		767FF42E2A36B339000F77F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +63,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7654900F2A39A9090074CC51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7654900D2A39A9040074CC51 /* Hand.swift */,
+				7654900B2A39A8F40074CC51 /* HitPosition.swift */,
+				765490092A39A8E60074CC51 /* UserState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		765490122A39A9230074CC51 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				765490102A39A91F0074CC51 /* PoseTrackerManager.swift */,
+				765490192A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift */,
+				7654901B2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		765490152A39A9600074CC51 /* Helper Methods */ = {
+			isa = PBXGroup;
+			children = (
+				765490132A39A9590074CC51 /* CGPoint.swift */,
+			);
+			path = "Helper Methods";
+			sourceTree = "<group>";
+		};
+		765490182A39A9BA0074CC51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				76336A322A414494008EB603 /* CountdownView.swift */,
+				76650E432A372D2C00181407 /* PoseTrackerView.swift */,
+				765490292A3ABB4E0074CC51 /* PosePreviewView.swift */,
+				765490272A3ABA320074CC51 /* PositionedRectangle.swift */,
+				765490162A39A98C0074CC51 /* CameraView.swift */,
+				76650E452A372D4A00181407 /* CameraPreview.swift */,
+				765490252A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		767FF4202A36B339000F77F7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
-				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				7654900F2A39A9090074CC51 /* Models */,
+				765490182A39A9BA0074CC51 /* Views */,
+				765490122A39A9230074CC51 /* View Model */,
+				765490152A39A9600074CC51 /* Helper Methods */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
 			);
@@ -160,8 +234,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7654900C2A39A8F40074CC51 /* HitPosition.swift in Sources */,
+				7654901A2A39A9FD0074CC51 /* PoseTrackerManager+Clapping.swift in Sources */,
+				765490112A39A91F0074CC51 /* PoseTrackerManager.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				765490262A3AB7BC0074CC51 /* CameraPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */,
+				765490282A3ABA320074CC51 /* PositionedRectangle.swift in Sources */,
+				7654901C2A39ABB70074CC51 /* PoseTrackerManager+Selection.swift in Sources */,
+				765490172A39A98C0074CC51 /* CameraView.swift in Sources */,
+				7654900A2A39A8E60074CC51 /* UserState.swift in Sources */,
+				765490142A39A9590074CC51 /* CGPoint.swift in Sources */,
+				76336A332A414494008EB603 /* CountdownView.swift in Sources */,
+				7654902A2A3ABB4E0074CC51 /* PosePreviewView.swift in Sources */,
+				76650E462A372D4A00181407 /* CameraPreview.swift in Sources */,
+				7654900E2A39A9040074CC51 /* Hand.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
+				76650E442A372D2C00181407 /* PoseTrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,19 +378,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Body tracking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.vision.Demo-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,19 +409,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Body tracking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.vision.Demo-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
