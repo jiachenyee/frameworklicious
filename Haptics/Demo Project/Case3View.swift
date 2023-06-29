@@ -27,6 +27,9 @@ struct Case3View: View {
         .onAppear {
             hapticsManager.prepareHaptics()
         }
+        .onDisappear {
+            hapticsManager.engine?.stop()
+        }
     }
 }
 

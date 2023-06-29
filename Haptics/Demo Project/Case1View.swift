@@ -38,7 +38,9 @@ struct Case1View: View {
         .onAppear {
             hapticsManager.prepareHaptics()
         }
-        
+        .onDisappear {
+            hapticsManager.engine?.stop()
+        }
     }
 }
 
