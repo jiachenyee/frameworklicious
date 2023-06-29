@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
+import AVFoundation
+import UIKit
+import Vision
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            PoseTrackerView()
         }
-        .padding()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
