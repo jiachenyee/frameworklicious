@@ -29,6 +29,7 @@ public enum Framework {
     case gameKit
     case swiftUIAnimations
     case augmentedReality
+    case spriteKit
     
     public var name: String {
         switch self {
@@ -66,6 +67,8 @@ public enum Framework {
             return "SwiftUI Animations"
         case .augmentedReality:
             return "Augmented Reality"
+        case .spriteKit:
+            return "SpriteKit"
         }
     }
     
@@ -105,6 +108,8 @@ public enum Framework {
             return "Build stunning animations that bring your app to life in SwiftUI."
         case .augmentedReality:
             return "Integrate hardware sensing features to produce augmented reality apps and games."
+        case .spriteKit:
+            return "Add high-performance 2D content with smooth animations to your app, or create a game with a high-level set of 2D game-based tools."
         }
     }
     
@@ -144,6 +149,8 @@ public enum Framework {
             return "figure.walk.motion"
         case .augmentedReality:
             return "arkit"
+        case .spriteKit:
+            return "square.on.circle"
         }
     }
     
@@ -182,6 +189,8 @@ public enum Framework {
         case .swiftUIAnimations:
             return .blue
         case .augmentedReality:
+            return .orange
+        case .spriteKit:
             return .orange
         }
     }
@@ -222,6 +231,8 @@ public enum Framework {
             return "You tell SwiftUI how to draw your app’s user interface for different states, and then rely on SwiftUI to make interface updates when the state changes."
         case .augmentedReality:
             return "Augmented reality (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world. ARKit/RealityKit combines device motion tracking, world tracking, scene understanding, and display conveniences to simplify building an AR experience."
+        case .spriteKit:
+            return "SpriteKit is a general-purpose framework for drawing shapes, particles, text, images, and video in two dimensions. It leverages Metal to achieve high-performance rendering, while offering a simple programming interface to make it easy to create games and other graphics-intensive apps. Using a rich set of animations and physics behaviors, you can quickly add life to your visual elements and gracefully transition between screens."
         }
     }
     
@@ -240,7 +251,10 @@ public enum Framework {
         .liveActivities,
         .pencilKit,
         .coreMotion,
-        .gameKit
+        .gameKit,
+        .swiftUIAnimations,
+        .augmentedReality,
+        .spriteKit
     ]
     
     // Index used for iBeacon
