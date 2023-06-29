@@ -6,17 +6,47 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct Case3View: View {
+    @EnvironmentObject var hapticsManager: HapticsManager
+    
     var body: some View {
         ZStack {
-            Text("Augmented Reality")
+            ARViewContainer()
+                .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    
+                    print("Engine start!")
+                    
+                    hapticsManager.playHapticSample(.lamborghini)
+                    
+                }
+
+        }
+        .onAppear {
+            hapticsManager.prepareHaptics()
         }
     }
 }
 
-struct Case3View_Previews: PreviewProvider {
-    static var previews: some View {
-        Case3View()
+struct ARViewContainer: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> some ARView {
+        
+        // setup ARView
+        let arView = ARView(frame: .zero)
+        
+        let boxAnchor = try! AR.loadCar()
+        
+        arView.scene.anchors.append(boxAnchor)
+        
+        return arView
+        
     }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
+
+// ontap
+// play sound and haptic

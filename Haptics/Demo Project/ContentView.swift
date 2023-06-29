@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Demo Project
 //
-//  Created by Jia Chen Yee on 12/06/23.
+//  Created by Gerson Janhuel on 25/06/23.
 //
 
 import SwiftUI
@@ -12,6 +12,7 @@ enum Destination {
     case case1View
     case case2View
     case case3View
+    case case4View
 }
 
 struct ContentView: View {
@@ -30,9 +31,13 @@ struct ContentView: View {
                         Text("Physical Contact")
                     }
                     
-//                    NavigationLink(value: Destination.case3View) {
-//                        Text("Augmented Reality")
-//                    }
+                    NavigationLink(value: Destination.case3View) {
+                        Text("AR Lamborghini")
+                    }
+                    
+                    NavigationLink(value: Destination.case4View) {
+                        Text("AR Bounce")
+                    }
                 }
                 
             }
@@ -46,7 +51,12 @@ struct ContentView: View {
                     Case2View()
                 case .case3View:
                     Case3View()
+                case .case4View:
+                    Case4View()
+                
                 }
+                
+                
             }
         }
         .environmentObject(hapticsManager)
