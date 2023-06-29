@@ -27,6 +27,8 @@ public enum Framework {
     case pencilKit
     case coreMotion
     case gameKit
+    case swiftUIAnimations
+    case augmentedReality
     
     var name: String {
         switch self {
@@ -60,6 +62,10 @@ public enum Framework {
             return "CoreMotion"
         case .gameKit:
             return "GameKit"
+        case .swiftUIAnimations:
+            return "SwiftUI Animations"
+        case .augmentedReality:
+            return "Augmented Reality"
         }
     }
     
@@ -95,6 +101,10 @@ public enum Framework {
             return "Process accelerometer, gyroscope, pedometer, and environment-related events"
         case .gameKit:
             return "Enable players to interact with friends, compare leaderboard ranks, earn achievements, and participate in multiplayer games"
+        case .swiftUIAnimations:
+            return "Build stunning animations that bring your app to life in SwiftUI."
+        case .augmentedReality:
+            return "Integrate hardware sensing features to produce augmented reality apps and games."
         }
     }
     
@@ -130,6 +140,10 @@ public enum Framework {
             return "move.3d"
         case .gameKit:
             return "gamecontroller"
+        case .swiftUIAnimations:
+            return "figure.walk.motion"
+        case .augmentedReality:
+            return "arkit"
         }
     }
     
@@ -165,6 +179,10 @@ public enum Framework {
             return .green
         case .gameKit:
             return .purple
+        case .swiftUIAnimations:
+            return .blue
+        case .augmentedReality:
+            return .orange
         }
     }
     
@@ -200,6 +218,10 @@ public enum Framework {
             return "Core Motion reports motion- and environment-related data from the onboard hardware, including from the accelerometers and gyroscopes, and from the pedometer, magnetometer, and barometer.\n\nYou use this framework to access hardware-generated data so that you can use it in your app. For example, a game might use accelerometer and gyroscope data to control onscreen game behavior."
         case .gameKit:
             return "GameKit allows you to implement Game Center social-gaming network features. Game Center is an Apple service that provides a single account that identifies players across all their games and devices. After players sign in to Game Center on their device, they can access their friends and use Game Center features you implement."
+        case .swiftUIAnimations:
+            return "You tell SwiftUI how to draw your app’s user interface for different states, and then rely on SwiftUI to make interface updates when the state changes."
+        case .augmentedReality:
+            return "Augmented reality (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world. ARKit/RealityKit combines device motion tracking, world tracking, scene understanding, and display conveniences to simplify building an AR experience."
         }
     }
 }
