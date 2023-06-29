@@ -91,15 +91,21 @@ struct PoseTrackerView: View {
                             .fontWeight(.bold)
                         
                         if let latestImage = poseTracker.randomPhoto {
-                            ZStack(alignment: .bottomLeading) {
-                                Image(uiImage: latestImage)
-                                    .resizable()
-                                    .scaledToFit()
-                                Text("FRAMEWORKLICIOUS @ ILB")
-                                    .font(.system(size: 18, design: .monospaced))
-                                    .foregroundColor(.white)
-                                    .background(.black)
-                                    .padding()
+                            let image = Image(uiImage: latestImage)
+                            
+                            ShareLink(item: image,
+                                      preview: SharePreview("Photo",
+                                                            image: image)) {
+                                ZStack(alignment: .bottomLeading) {
+                                    Image(uiImage: latestImage)
+                                        .resizable()
+                                        .scaledToFit()
+                                    Text("FRAMEWORKLICIOUS @ ILB")
+                                        .font(.system(size: 18, design: .monospaced))
+                                        .foregroundColor(.white)
+                                        .background(.black)
+                                        .padding()
+                                }
                             }
                         }
                         
