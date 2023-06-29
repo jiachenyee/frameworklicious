@@ -12,6 +12,12 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		7CC346502A488D4D008AFFC1 /* Case1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3464F2A488D4D008AFFC1 /* Case1View.swift */; };
+		7CC346522A488D57008AFFC1 /* Case2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346512A488D57008AFFC1 /* Case2View.swift */; };
+		7CC346542A488D62008AFFC1 /* Case3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346532A488D62008AFFC1 /* Case3View.swift */; };
+		7CC346562A493B4B008AFFC1 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346552A493B4B008AFFC1 /* HapticsManager.swift */; };
+		7CC346582A4ABE7C008AFFC1 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = 7CC346572A4ABE7C008AFFC1 /* AHAP */; };
+		7CC3465C2A4C3C93008AFFC1 /* HapticBounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3465B2A4C3C93008AFFC1 /* HapticBounceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		7CC3464F2A488D4D008AFFC1 /* Case1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case1View.swift; sourceTree = "<group>"; };
+		7CC346512A488D57008AFFC1 /* Case2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2View.swift; sourceTree = "<group>"; };
+		7CC346532A488D62008AFFC1 /* Case3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3View.swift; sourceTree = "<group>"; };
+		7CC346552A493B4B008AFFC1 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		7CC346572A4ABE7C008AFFC1 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AHAP; sourceTree = "<group>"; };
+		7CC3465B2A4C3C93008AFFC1 /* HapticBounceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticBounceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
+				7CC346552A493B4B008AFFC1 /* HapticsManager.swift */,
+				7CC3465B2A4C3C93008AFFC1 /* HapticBounceViewController.swift */,
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				7CC3464F2A488D4D008AFFC1 /* Case1View.swift */,
+				7CC346512A488D57008AFFC1 /* Case2View.swift */,
+				7CC346532A488D62008AFFC1 /* Case3View.swift */,
+				7CC346572A4ABE7C008AFFC1 /* AHAP */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
 			);
@@ -150,6 +168,7 @@
 			files = (
 				767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */,
 				767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */,
+				7CC346582A4ABE7C008AFFC1 /* AHAP in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC346562A493B4B008AFFC1 /* HapticsManager.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
+				7CC346542A488D62008AFFC1 /* Case3View.swift in Sources */,
+				7CC346502A488D4D008AFFC1 /* Case1View.swift in Sources */,
+				7CC3465C2A4C3C93008AFFC1 /* HapticBounceViewController.swift in Sources */,
+				7CC346522A488D57008AFFC1 /* Case2View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
