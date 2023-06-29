@@ -37,3 +37,7 @@
   - [demo project](CoreMotion), [developer documentation](http://developer.apple.com/documentation/coremotion)
 - GameKit: 
   - [demo project](GameKit), [developer documentation](http://developer.apple.com/documentation/gamekit/)
+- SpriteKit:
+  - [demo project](SpriteKit), [developer documentation](http://developer.apple.com/documentation/spritekit/)
+- Speech:
+  - [demo project](Speech), [developer documentation](http://developer.apple.com/documentation/speech/)
