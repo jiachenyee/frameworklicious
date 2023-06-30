@@ -1,0 +1,14 @@
+{
+  "type" : "image",
+  "data" : {
+    "orientation" : 1,
+    "alpha" : false,
+    "width" : 800,
+    "resolution" : {
+      "x" : 96,
+      "y" : 96,
+      "unit" : "dpi"
+    },
+    "height" : 533
+  }
+}
