@@ -1,23 +1,13 @@
-# Frameworklicious
-## Explore iOS Device Frameworks
+<img src="./.assets/banner.png" width="100%">
 
-## Technologies & Sample Projects
-### Day 1
-- HealthKit: 
-  - [demo project](HealthKit), [developer documentation](http://developer.apple.com/documentation/healthkit)
-- Machine Learning:
-  - [demo project](Machine%20Learning), [developer documentation](http://developer.apple.com/documentation/coreml)
-- Vision: 
-  - [demo project](Vision), [developer documentation](http://developer.apple.com/documentation/vision)
-- Apple Watch: 
-  - [demo project](Apple%20Watch), [developer documentation](https://developer.apple.com/documentation/watchconnectivity)
-- Multipeer Connectivity: 
-  - [demo project](Multipeer%20Connectivity), [developer documentation](http://developer.apple.com/documentation/multipeerconnectivity)
-- SharePlay: 
-  - [demo project](SharePlay), [developer documentation](http://developer.apple.com/documentation/shareplay)
-- CoreHaptics: 
-  - [demo project](Haptics), [developer documentation](http://developer.apple.com/documentation/corehaptics/)
-- SwiftUI Animations: 
-  - [demo project](SwiftUI%20Animations), [developer documentation](http://developer.apple.com/documentation/swiftui/animations)
-- Augmented Reality: 
-  - [demo project](Augmented%20Reality), [developer documentation](http://developer.apple.com/documentation/realitykit)
+# Day 1
+
+<a href="HealthKit"> <img src="./.assets/healthkit.png" alt="HealthKit" width="30%"> </a> 
+<a href="Machine%20Learning"> <img src="./.assets/machine-learning.png" alt="Machine Learning" width="30%"> </a> 
+<a href="Vision"> <img src="./.assets/vision.png" alt="Vision" width="30%"> </a> 
+<a href="Apple%20Watch"> <img src="./.assets/apple-watch.png" alt="Apple Watch" width="30%"> </a> 
+<a href="Multipeer%20Connectivity"> <img src="./.assets/multipeer-connectivity.png" alt="Multipeer Connectivity" width="30%"> </a> 
+<a href="SharePlay"> <img src="./.assets/shareplay.png" alt="SharePlay" width="30%"> </a> 
+<a href="Haptics"> <img src="./.assets/core-haptics.png" alt="CoreHaptics" width="30%"> </a> 
+<a href="SwiftUI%20Animations"> <img src="./.assets/swiftui-animations.png" alt="SwiftUI Animations" width="30%"> </a> 
+<a href="Augmented%20Reality"> <img src="./.assets/augmented-reality.png" alt="Augmented Reality" width="30%"> </a> 
