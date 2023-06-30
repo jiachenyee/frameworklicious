@@ -3,4 +3,4 @@ Here's a collection of external links to learn more about creating immersive exp
 
 - [Apple Developer](http://developer.apple.com/watchos)
 - [Developer Documentation](https://developer.apple.com/documentation/watch-connectivity)
-- [Augmented Reality — Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos)
+- [watchOS — Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos)
