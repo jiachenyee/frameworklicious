@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Demo Project
+//  DemoProjectWatch Watch App
 //
-//  Created by Jia Chen Yee on 12/06/23.
+//  Created by Afina R. Vinci on 30/06/23.
 //
 
 import SwiftUI
