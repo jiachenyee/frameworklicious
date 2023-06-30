@@ -10,7 +10,6 @@
 		CC70243F2A4CE99D00AF13FD /* apple-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC70243D2A4CE99C00AF13FD /* apple-2.mp4 */; };
 		CC7024402A4CE99D00AF13FD /* apple-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC70243E2A4CE99C00AF13FD /* apple-1.mp4 */; };
 		CCBEB90E2A4BD70F00320D7C /* SocialMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEB90D2A4BD70F00320D7C /* SocialMediaView.swift */; };
-		CCBEB9142A4BDEAC00320D7C /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = CCBEB9132A4BDEAC00320D7C /* test.MOV */; };
 		CCBEB9162A4BEB5700320D7C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEB9152A4BEB5700320D7C /* ButtonView.swift */; };
 		CCFB18772A436E80004BB524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB18762A436E80004BB524 /* AppDelegate.swift */; };
 		CCFB18792A436E80004BB524 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB18782A436E80004BB524 /* art.scnassets */; };
@@ -25,7 +24,6 @@
 		CC70243D2A4CE99C00AF13FD /* apple-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apple-2.mp4"; sourceTree = "<group>"; };
 		CC70243E2A4CE99C00AF13FD /* apple-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apple-1.mp4"; sourceTree = "<group>"; };
 		CCBEB90D2A4BD70F00320D7C /* SocialMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaView.swift; sourceTree = "<group>"; };
-		CCBEB9132A4BDEAC00320D7C /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 		CCBEB9152A4BEB5700320D7C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		CCFB18732A436E80004BB524 /* ARBusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBusinessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB18762A436E80004BB524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			children = (
 				CC70243E2A4CE99C00AF13FD /* apple-1.mp4 */,
 				CC70243D2A4CE99C00AF13FD /* apple-2.mp4 */,
-				CCBEB9132A4BDEAC00320D7C /* test.MOV */,
 				CCFB18762A436E80004BB524 /* AppDelegate.swift */,
 				CCFB18782A436E80004BB524 /* art.scnassets */,
 				CCFB187A2A436E80004BB524 /* ViewController.swift */,
@@ -145,7 +142,6 @@
 				CCFB18832A436E81004BB524 /* LaunchScreen.storyboard in Resources */,
 				CCFB18802A436E81004BB524 /* Assets.xcassets in Resources */,
 				CC70243F2A4CE99D00AF13FD /* apple-2.mp4 in Resources */,
-				CCBEB9142A4BDEAC00320D7C /* test.MOV in Resources */,
 				CCFB187E2A436E80004BB524 /* Main.storyboard in Resources */,
 				CC7024402A4CE99D00AF13FD /* apple-1.mp4 in Resources */,
 			);
