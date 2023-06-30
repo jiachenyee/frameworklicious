@@ -13,22 +13,12 @@
 <a href="Augmented%20Reality"> <img src="./.assets/augmented-reality.png" alt="Augmented Reality" width="30%"> </a> 
 
 # Day 2
-
-- SiriKit: 
-  - [demo project](Siri), [developer documentation](http://developer.apple.com/documentation/sirikit)
-- Messages:
-  - [demo project](Messages), [developer documentation](http://developer.apple.com/documentation/messages)
-- CoreLocation: 
-  - [demo project](Location), [developer documentation](http://developer.apple.com/documentation/corelocation)
-- Live Activity & WidgetKit: 
-  - [demo project](Live%20Activity), [developer documentation](https://developer.apple.com/documentation/widgetkit)
-- PencilKit: 
-  - [demo project](PencilKit), [developer documentation](http://developer.apple.com/documentation/pencilkit)
-- CoreMotion: 
-  - [demo project](CoreMotion), [developer documentation](http://developer.apple.com/documentation/coremotion)
-- GameKit: 
-  - [demo project](GameKit), [developer documentation](http://developer.apple.com/documentation/gamekit/)
-- SpriteKit:
-  - [demo project](SpriteKit), [developer documentation](http://developer.apple.com/documentation/spritekit/)
-- Speech:
-  - [demo project](Speech), [developer documentation](http://developer.apple.com/documentation/speech/)
+<a href="Siri"> <img src="./.assets/siri.png" alt="SiriKit" width="30%"> </a> 
+<a href="Messages"> <img src="./.assets/messages.png" alt="Messages" width="30%"> </a> 
+<a href="Location"> <img src="./.assets/location.png" alt="Location" width="30%"> </a> 
+<a href="Live%20Activity"> <img src="./.assets/live-activities.png" alt="Live Activities" width="30%"> </a> 
+<a href="PencilKit"> <img src="./.assets/pencil.png" alt="PencilKit" width="30%"> </a> 
+<a href="CoreMotion"> <img src="./.assets/coremotion.png" alt="CoreMotion" width="30%"> </a> 
+<a href="GameKit"> <img src="./.assets/game.png" alt="GameKit" width="30%"> </a> 
+<a href="SpriteKit"> <img src="./.assets/spritekit.png" alt="SpriteKit" width="30%"> </a> 
+<a href="Speech"> <img src="./.assets/speech.png" alt="Speech" width="30%"> </a> 
