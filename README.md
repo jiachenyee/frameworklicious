@@ -11,3 +11,5 @@
 <a href="Haptics"> <img src="./.assets/core-haptics.png" alt="CoreHaptics" width="30%"> </a> 
 <a href="SwiftUI%20Animations"> <img src="./.assets/swiftui-animations.png" alt="SwiftUI Animations" width="30%"> </a> 
 <a href="Augmented%20Reality"> <img src="./.assets/augmented-reality.png" alt="Augmented Reality" width="30%"> </a> 
+
+Apple Developer Academy @ Infinite Learning Batam.
