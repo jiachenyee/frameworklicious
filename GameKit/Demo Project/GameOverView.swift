@@ -25,7 +25,7 @@ struct GameOverView: View {
                     
                 } else {
                     Text((matchManager.isLocalPlayerWin) ? "You WIN!" : "You LOSE!")
-                        .font(.system(size: 100).bold().italic())
+                        .font(.system(size: 110).bold().italic())
                         .multilineTextAlignment(.center)
                         .foregroundColor((matchManager.isLocalPlayerWin) ? .green : .red )
                 }

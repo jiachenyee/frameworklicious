@@ -105,9 +105,13 @@ class MatchManager: NSObject, ObservableObject {
             }
         }
         
+        // reset
         tapScore = 0
         otherPlayerScore = 0
+        isDraw = false
+        isLocalPlayerWin = false
         
+        // back in game 
         gameStatus = .inGame
     }
     
