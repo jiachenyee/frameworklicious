@@ -106,6 +106,7 @@ public struct FrameworkliciousApp<Content: View>: View {
         .onAppear {
             beaconManager.setUp(framework: framework)
         }
+        .preferredColorScheme(.dark)
     }
 }
 

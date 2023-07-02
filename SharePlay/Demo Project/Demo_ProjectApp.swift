@@ -13,7 +13,12 @@ struct Demo_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             FrameworkliciousApp(framework: .shareplay) {
-                ContentView()
+                SharePlayView()
+#if os(macOS)
+                .frame( minHeight: 700)
+                .frame(width: 300)
+#endif
+
             }
         }
     }

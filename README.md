@@ -1,35 +1,24 @@
-# Frameworklicious
-## Explore iOS Device Frameworks
+<img src="./.assets/banner.png" width="100%">
 
-## Technologies & Sample Projects
-### Day 1
-- HealthKit: 
-  - [demo project](HealthKit), [developer documentation](http://developer.apple.com/documentation/healthkit)
-- Machine Learning:
-  - [demo project](Machine%20Learning), [developer documentation](http://developer.apple.com/documentation/coreml)
-- Vision: 
-  - [demo project](Vision), [developer documentation](http://developer.apple.com/documentation/vision)
-- Apple Watch: 
-  - [demo project](Apple%20Watch), [developer documentation](https://developer.apple.com/documentation/watchconnectivity)
-- Multipeer Connectivity: 
-  - [demo project](Multipeer%20Connectivity), [developer documentation](http://developer.apple.com/documentation/multipeerconnectivity)
-- SharePlay: 
-  - [demo project](SharePlay), [developer documentation](http://developer.apple.com/documentation/shareplay)
-- CoreHaptics: 
-  - [demo project](Haptics), [developer documentation](http://developer.apple.com/documentation/corehaptics/)
+# Day 1
 
-### Day 2
-- SiriKit: 
-  - [demo project](Siri), [developer documentation](http://developer.apple.com/documentation/sirikit)
-- Messages:
-  - [demo project](Messages), [developer documentation](http://developer.apple.com/documentation/messages)
-- CoreLocation: 
-  - [demo project](Location), [developer documentation](http://developer.apple.com/documentation/corelocation)
-- Live Activity & WidgetKit: 
-  - [demo project](Live%20Activity), [developer documentation](https://developer.apple.com/documentation/widgetkit)
-- PencilKit: 
-  - [demo project](PencilKit), [developer documentation](http://developer.apple.com/documentation/pencilkit)
-- CoreMotion: 
-  - [demo project](CoreMotion), [developer documentation](http://developer.apple.com/documentation/coremotion)
-- GameKit: 
-  - [demo project](GameKit), [developer documentation](http://developer.apple.com/documentation/gamekit/)
+<a href="HealthKit"> <img src="./.assets/healthkit.png" alt="HealthKit" width="30%"> </a> 
+<a href="Machine%20Learning"> <img src="./.assets/machine-learning.png" alt="Machine Learning" width="30%"> </a> 
+<a href="Vision"> <img src="./.assets/vision.png" alt="Vision" width="30%"> </a> 
+<a href="Apple%20Watch"> <img src="./.assets/apple-watch.png" alt="Apple Watch" width="30%"> </a> 
+<a href="Multipeer%20Connectivity"> <img src="./.assets/multipeer-connectivity.png" alt="Multipeer Connectivity" width="30%"> </a> 
+<a href="SharePlay"> <img src="./.assets/shareplay.png" alt="SharePlay" width="30%"> </a> 
+<a href="Haptics"> <img src="./.assets/core-haptics.png" alt="CoreHaptics" width="30%"> </a> 
+<a href="SwiftUI%20Animations"> <img src="./.assets/swiftui-animations.png" alt="SwiftUI Animations" width="30%"> </a> 
+<a href="Augmented%20Reality"> <img src="./.assets/augmented-reality.png" alt="Augmented Reality" width="30%"> </a> 
+
+# Day 2
+<a href="Siri"> <img src="./.assets/siri.png" alt="SiriKit" width="30%"> </a> 
+<a href="Messages"> <img src="./.assets/messages.png" alt="Messages" width="30%"> </a> 
+<a href="Location"> <img src="./.assets/location.png" alt="Location" width="30%"> </a> 
+<a href="Live%20Activity"> <img src="./.assets/live-activities.png" alt="Live Activities" width="30%"> </a> 
+<a href="PencilKit"> <img src="./.assets/pencil.png" alt="PencilKit" width="30%"> </a> 
+<a href="CoreMotion"> <img src="./.assets/coremotion.png" alt="CoreMotion" width="30%"> </a> 
+<a href="GameKit"> <img src="./.assets/game.png" alt="GameKit" width="30%"> </a> 
+<a href="SpriteKit"> <img src="./.assets/spritekit.png" alt="SpriteKit" width="30%"> </a> 
+<a href="Speech"> <img src="./.assets/speech.png" alt="Speech" width="30%"> </a> 

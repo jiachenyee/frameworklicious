@@ -12,6 +12,9 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		F69F17352A4E6CF500991D67 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F17342A4E6CF500991D67 /* GameViewModel.swift */; };
+		F69F17372A4E6D0900991D67 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F17362A4E6D0900991D67 /* GameModel.swift */; };
+		F69F17392A4E6D2800991D67 /* SharePlayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F17382A4E6D2800991D67 /* SharePlayService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		F69F17332A4E6AD700991D67 /* Demo Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Demo Project.entitlements"; sourceTree = "<group>"; };
+		F69F17342A4E6CF500991D67 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F69F17362A4E6D0900991D67 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F69F17382A4E6D2800991D67 /* SharePlayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +63,14 @@
 		767FF42B2A36B339000F77F7 /* Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				F69F17332A4E6AD700991D67 /* Demo Project.entitlements */,
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
+				F69F17342A4E6CF500991D67 /* GameViewModel.swift */,
+				F69F17362A4E6D0900991D67 /* GameModel.swift */,
+				F69F17382A4E6D2800991D67 /* SharePlayService.swift */,
 			);
 			path = "Demo Project";
 			sourceTree = "<group>";
@@ -160,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69F17392A4E6D2800991D67 /* SharePlayService.swift in Sources */,
+				F69F17352A4E6CF500991D67 /* GameViewModel.swift in Sources */,
+				F69F17372A4E6D0900991D67 /* GameModel.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
 			);
@@ -287,9 +301,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Project/Demo Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = GFLA8JWCSF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,9 +331,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Project/Demo Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = GFLA8JWCSF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
