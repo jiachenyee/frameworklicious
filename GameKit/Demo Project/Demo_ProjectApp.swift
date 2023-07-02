@@ -10,11 +10,12 @@ import FrameworkliciousCore
 
 @main
 struct Demo_ProjectApp: App {
+    @StateObject var matchManager = MatchManager()
     var body: some Scene {
         WindowGroup {
-            FrameworkliciousApp(framework: .gameKit) {
+//            FrameworkliciousApp(framework: .gameKit) {
                 ContentView()
-            }
+//            }
         }
     }
 }

@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var matchManager = MatchManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Group {
+            
+            switch matchManager.gameStatus {
+            case .setup:
+                SetupView(matchManager: matchManager)
+            case .inGame:
+                InGameView(matchManager: matchManager)
+            case .gameOver:
+                GameOverView(matchManager: matchManager)
+            }
+            
         }
-        .padding()
+        .onAppear {
+            matchManager.authenticateUser()
+        }
+        
+        
     }
 }
 

@@ -12,6 +12,13 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		7CC346422A473C37008AFFC1 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346412A473C37008AFFC1 /* MatchManager.swift */; };
+		7CC346442A474574008AFFC1 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346432A474574008AFFC1 /* GameOverView.swift */; };
+		7CC346462A47458E008AFFC1 /* InGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346452A47458E008AFFC1 /* InGameView.swift */; };
+		7CC346482A4746E5008AFFC1 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346472A4746E5008AFFC1 /* SetupView.swift */; };
+		7CC3464A2A4748C4008AFFC1 /* MatchManager+GKMatchmakerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC346492A4748C4008AFFC1 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */; };
+		7CC3464C2A474AE4008AFFC1 /* MatchManager+GKMatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3464B2A474AE4008AFFC1 /* MatchManager+GKMatchDelegate.swift */; };
+		7CC3464E2A4756C7008AFFC1 /* MatchManager+GKGameCenterControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3464D2A4756C7008AFFC1 /* MatchManager+GKGameCenterControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,14 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		7CC346402A473AE6008AFFC1 /* Demo Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Demo Project.entitlements"; sourceTree = "<group>"; };
+		7CC346412A473C37008AFFC1 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		7CC346432A474574008AFFC1 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		7CC346452A47458E008AFFC1 /* InGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameView.swift; sourceTree = "<group>"; };
+		7CC346472A4746E5008AFFC1 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		7CC346492A4748C4008AFFC1 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMatchmakerViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		7CC3464B2A474AE4008AFFC1 /* MatchManager+GKMatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMatchDelegate.swift"; sourceTree = "<group>"; };
+		7CC3464D2A4756C7008AFFC1 /* MatchManager+GKGameCenterControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKGameCenterControllerDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +71,13 @@
 		767FF42B2A36B339000F77F7 /* Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				7CC346402A473AE6008AFFC1 /* Demo Project.entitlements */,
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
+				7CC3467D2A4EB5CF008AFFC1 /* MatchManager */,
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				7CC346472A4746E5008AFFC1 /* SetupView.swift */,
+				7CC346452A47458E008AFFC1 /* InGameView.swift */,
+				7CC346432A474574008AFFC1 /* GameOverView.swift */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
 			);
@@ -85,6 +105,17 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC3467D2A4EB5CF008AFFC1 /* MatchManager */ = {
+			isa = PBXGroup;
+			children = (
+				7CC346412A473C37008AFFC1 /* MatchManager.swift */,
+				7CC346492A4748C4008AFFC1 /* MatchManager+GKMatchmakerViewControllerDelegate.swift */,
+				7CC3464B2A474AE4008AFFC1 /* MatchManager+GKMatchDelegate.swift */,
+				7CC3464D2A4756C7008AFFC1 /* MatchManager+GKGameCenterControllerDelegate.swift */,
+			);
+			path = MatchManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC3464A2A4748C4008AFFC1 /* MatchManager+GKMatchmakerViewControllerDelegate.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				7CC3464C2A474AE4008AFFC1 /* MatchManager+GKMatchDelegate.swift in Sources */,
+				7CC346422A473C37008AFFC1 /* MatchManager.swift in Sources */,
+				7CC346462A47458E008AFFC1 /* InGameView.swift in Sources */,
+				7CC346442A474574008AFFC1 /* GameOverView.swift in Sources */,
+				7CC346482A4746E5008AFFC1 /* SetupView.swift in Sources */,
+				7CC3464E2A4756C7008AFFC1 /* MatchManager+GKGameCenterControllerDelegate.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +325,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Project/Demo Project.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = Y57LT3DKL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "God's Fingers";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,8 +345,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.gersonjanhuel.GameKit-Demo-GodsFinger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,11 +359,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Project/Demo Project.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = Y57LT3DKL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "God's Fingers";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,8 +379,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.jiachen.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.gersonjanhuel.GameKit-Demo-GodsFinger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
