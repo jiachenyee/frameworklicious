@@ -28,6 +28,28 @@ struct AirHockeyView: View {
                 PlayerView(positionX: viewModel.player1Position.x, positionY: viewModel.player1Position.y, size: viewModel.paddleSize, color: .yellow)
                 
                 PlayerView(positionX: viewModel.player2Position.x, positionY: viewModel.player2Position.y, size: viewModel.paddleSize, color: .red)
+                
+                VStack {
+                    // Scoreboard
+                    HStack {
+                        HStack(spacing: 40) {
+                            Button("Reset") {
+                                viewModel.resetScore()
+                            }
+                            Button("Exit") {
+                                viewModel.endGame()
+                            }
+                        }.rotationEffect(Angle(degrees: 90))
+                        Spacer() //if I add spacer here, the score and button disappear
+                        VStack{
+                            Text("Player 1 Score       Player 2 Score")
+                                .font(.title2)
+                            Text("\(viewModel.player1Score)       \(viewModel.player2Score)")
+                                .font(.title)
+                        }.rotationEffect(Angle(degrees: 90))
+                        
+                    }
+                }
             }
             .onAppear {
                 viewModel.geometriSize = geometry.size
@@ -44,6 +66,22 @@ struct AirHockeyView: View {
                     viewModel.endGame()
                 }
             }
+            .alert("Congrats \(viewModel.winner ?? "") win!", isPresented: Binding<Bool>(get: {
+                viewModel.showAlertWin
+            }, set: { _, _ in
+                viewModel.showAlert.toggle()
+            }) ) {
+                Button("Play Again", role: .cancel) {
+                    viewModel.resetScore()
+                }
+                Button("Exit", role: .cancel) {
+                    viewModel.endGame()
+                }
+            }
+        }.onAppear {
+            UIApplication.shared.isIdleTimerDisabled = true
+        }.onDisappear {
+            UIApplication.shared.isIdleTimerDisabled = false
         }
     }
 }

@@ -14,13 +14,18 @@ class AirHockeyViewModel: ObservableObject {
     
     @Published var multipeerHandler: MultipeerHandler
     @Published var puckPosition = CGPoint(x: 384, y: 512)
-    @Published var puckVelocity = CGVector(dx: 2, dy: 2)
+    @Published var puckVelocity = CGVector(dx: 6, dy: 6)
     
     @Published var player1Position: CGPoint = .zero
     @Published var player2Position: CGPoint = .zero
     
     @Published var showAlert = false
     @Published var disconnectedPlayer: MCPeerID?
+    
+    @Published var player1Score = 0
+    @Published var player2Score = 0
+    @Published var winner: String?
+    @Published var showAlertWin = false
     
     let paddleSize: CGSize
     let puckSize: CGSize
@@ -78,37 +83,61 @@ class AirHockeyViewModel: ObservableObject {
         }
         
         // Check collision with walls
-        if newPuckX - puckSize.width/2 <= 0 || newPuckX + puckSize.width/2 >= UIScreen.main.bounds.width {
-            puckVelocity.dx *= -1
-        }
+                if newPuckX - puckSize.width/2 <= 0 || newPuckX + puckSize.width/2 >= UIScreen.main.bounds.width {
+                    puckVelocity.dx *= -1
+                }
         
-        if newPuckY - puckSize.height/2 <= 0 || newPuckY + puckSize.height/2 >= UIScreen.main.bounds.height {
+        // Check collision with goals (top and bottom of screen)
+        if newPuckY - puckSize.height/2 <= 0 {
             puckVelocity.dy *= -1
+            player2Score += 1 // player 2 scores a point if puck hits top of screen
+            checkWinning()
+        } else if newPuckY + puckSize.height/2 >= UIScreen.main.bounds.height {
+            puckVelocity.dy *= -1
+            player1Score += 1 // player 1 scores a point if puck hits bottom of screen
+            checkWinning()
         }
         
         puckPosition = CGPoint(x: newPuckX, y: newPuckY)
     }
     
+    func resetScore() {
+        player1Score = 0
+        player2Score = 0
+        winner = nil
+        showAlertWin = false
+    }
+    
+    func checkWinning() {
+        if player1Score == 5 {
+            winner = "player 1"
+            showAlertWin = true
+        } else if player2Score == 5 {
+            winner = "player 2"
+            showAlertWin = true
+        }
+    }
+    
     func updatePlayer1Position(with translation: CGSize) {
         let newPosition = CGPoint(x: player1Position.x + translation.height,
-                                     y: player1Position.y + translation.width)
-           
-           // Ensure the paddle remains within the game area
-           let clampedX = min(max(newPosition.x, paddleSize.width / 2), geometriSize!.width - paddleSize.width / 2)
+                                  y: player1Position.y + translation.width)
+        
+        // Ensure the paddle remains within the game area
+        let clampedX = min(max(newPosition.x, paddleSize.width / 2), geometriSize!.width - paddleSize.width / 2)
         let clampedY = min(max(newPosition.y, paddleSize.height / 2), maxPlayerMovement - paddleSize.height)
-
-           player1Position = CGPoint(x: clampedX, y: clampedY)
+        
+        player1Position = CGPoint(x: clampedX, y: clampedY)
     }
     
     func updatePlayer2Position(with translation: CGSize) {
         let newPosition = CGPoint(x: player2Position.x - translation.height,
-                                     y: player2Position.y - translation.width)
-           
-           // Ensure the paddle remains within the game area
-           let clampedX = min(max(newPosition.x, paddleSize.width / 2), geometriSize!.width - paddleSize.width / 2)
+                                  y: player2Position.y - translation.width)
+        
+        // Ensure the paddle remains within the game area
+        let clampedX = min(max(newPosition.x, paddleSize.width / 2), geometriSize!.width - paddleSize.width / 2)
         let clampedY = max(min(newPosition.y, geometriSize!.height - paddleSize.height / 2), geometriSize!.height - (maxPlayerMovement - paddleSize.height))
-
-           player2Position = CGPoint(x: clampedX, y: clampedY)
+        
+        player2Position = CGPoint(x: clampedX, y: clampedY)
     }
     
     func updatePlayerPosition(peerID: MCPeerID, position: Position){
@@ -143,6 +172,7 @@ class AirHockeyViewModel: ObservableObject {
     
     func endGame() {
         parentViewModel?.stopHosting()
+        resetScore()
     }
 }
 
