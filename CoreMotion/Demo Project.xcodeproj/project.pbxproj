@@ -12,6 +12,39 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		BC7B09862A51AB3300A17106 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09852A51AB3300A17106 /* CoreMotionManager.swift */; };
+		BC7B09892A51B61A00A17106 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09882A51B61A00A17106 /* MainView.swift */; };
+		BC7B098B2A51B63800A17106 /* FallDetectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B098A2A51B63800A17106 /* FallDetectionVIew.swift */; };
+		BC7B098D2A51B65200A17106 /* PressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B098C2A51B65200A17106 /* PressureView.swift */; };
+		BC7B098F2A51BDE200A17106 /* ActivityMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B098E2A51BDE200A17106 /* ActivityMusicView.swift */; };
+		BC7B09BC2A521DAC00A17106 /* Controller_Air_HockeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09BB2A521DAC00A17106 /* Controller_Air_HockeyApp.swift */; };
+		BC7B09C02A521DAD00A17106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09BF2A521DAD00A17106 /* Assets.xcassets */; };
+		BC7B09C32A521DAD00A17106 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09C22A521DAD00A17106 /* Preview Assets.xcassets */; };
+		BC7B09CE2A521DD100A17106 /* Host_Air_HockeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09CD2A521DD100A17106 /* Host_Air_HockeyApp.swift */; };
+		BC7B09D22A521DD200A17106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09D12A521DD200A17106 /* Assets.xcassets */; };
+		BC7B09D52A521DD200A17106 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09D42A521DD200A17106 /* Preview Assets.xcassets */; };
+		BC7B09E02A521E7600A17106 /* ControllerMultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09DA2A521E7600A17106 /* ControllerMultipeerHandler.swift */; };
+		BC7B09E12A521E7600A17106 /* ControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09DB2A521E7600A17106 /* ControllerViewModel.swift */; };
+		BC7B09E22A521E7600A17106 /* StartControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09DC2A521E7600A17106 /* StartControllerViewModel.swift */; };
+		BC7B09E32A521E7600A17106 /* StartControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09DE2A521E7600A17106 /* StartControllerView.swift */; };
+		BC7B09E42A521E7600A17106 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09DF2A521E7600A17106 /* ControllerView.swift */; };
+		BC7B09EC2A521E8600A17106 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09E62A521E8600A17106 /* StartView.swift */; };
+		BC7B09ED2A521E8600A17106 /* AirHockeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09E72A521E8600A17106 /* AirHockeyView.swift */; };
+		BC7B09EE2A521E8600A17106 /* AirHockeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09E92A521E8600A17106 /* AirHockeyViewModel.swift */; };
+		BC7B09EF2A521E8600A17106 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09EA2A521E8600A17106 /* StartViewModel.swift */; };
+		BC7B09F02A521E8600A17106 /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09EB2A521E8600A17106 /* MultipeerHandler.swift */; };
+		BC7B09FB2A521EEB00A17106 /* DataTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F32A521EEB00A17106 /* DataTypeIdentifier.swift */; };
+		BC7B09FC2A521EEB00A17106 /* DataTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F32A521EEB00A17106 /* DataTypeIdentifier.swift */; };
+		BC7B09FD2A521EEB00A17106 /* MCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F42A521EEB00A17106 /* MCConstants.swift */; };
+		BC7B09FE2A521EEB00A17106 /* MCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F42A521EEB00A17106 /* MCConstants.swift */; };
+		BC7B09FF2A521EEB00A17106 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F52A521EEB00A17106 /* GameState.swift */; };
+		BC7B0A002A521EEB00A17106 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F52A521EEB00A17106 /* GameState.swift */; };
+		BC7B0A012A521EEB00A17106 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F82A521EEB00A17106 /* Messagable.swift */; };
+		BC7B0A022A521EEB00A17106 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F82A521EEB00A17106 /* Messagable.swift */; };
+		BC7B0A032A521EEB00A17106 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F92A521EEB00A17106 /* Player.swift */; };
+		BC7B0A042A521EEB00A17106 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09F92A521EEB00A17106 /* Player.swift */; };
+		BC7B0A052A521EEB00A17106 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09FA2A521EEB00A17106 /* Position.swift */; };
+		BC7B0A062A521EEB00A17106 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09FA2A521EEB00A17106 /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +54,38 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		BC7B09832A51AAB800A17106 /* Demo-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Demo-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BC7B09852A51AB3300A17106 /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
+		BC7B09882A51B61A00A17106 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BC7B098A2A51B63800A17106 /* FallDetectionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallDetectionVIew.swift; sourceTree = "<group>"; };
+		BC7B098C2A51B65200A17106 /* PressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureView.swift; sourceTree = "<group>"; };
+		BC7B098E2A51BDE200A17106 /* ActivityMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMusicView.swift; sourceTree = "<group>"; };
+		BC7B09B92A521DAC00A17106 /* Controller Air Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Controller Air Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7B09BB2A521DAC00A17106 /* Controller_Air_HockeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller_Air_HockeyApp.swift; sourceTree = "<group>"; };
+		BC7B09BF2A521DAD00A17106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC7B09C22A521DAD00A17106 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC7B09CB2A521DD100A17106 /* Host Air Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Host Air Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7B09CD2A521DD100A17106 /* Host_Air_HockeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host_Air_HockeyApp.swift; sourceTree = "<group>"; };
+		BC7B09D12A521DD200A17106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC7B09D42A521DD200A17106 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC7B09DA2A521E7600A17106 /* ControllerMultipeerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMultipeerHandler.swift; sourceTree = "<group>"; };
+		BC7B09DB2A521E7600A17106 /* ControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewModel.swift; sourceTree = "<group>"; };
+		BC7B09DC2A521E7600A17106 /* StartControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartControllerViewModel.swift; sourceTree = "<group>"; };
+		BC7B09DE2A521E7600A17106 /* StartControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartControllerView.swift; sourceTree = "<group>"; };
+		BC7B09DF2A521E7600A17106 /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		BC7B09E62A521E8600A17106 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		BC7B09E72A521E8600A17106 /* AirHockeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirHockeyView.swift; sourceTree = "<group>"; };
+		BC7B09E92A521E8600A17106 /* AirHockeyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirHockeyViewModel.swift; sourceTree = "<group>"; };
+		BC7B09EA2A521E8600A17106 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		BC7B09EB2A521E8600A17106 /* MultipeerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerHandler.swift; sourceTree = "<group>"; };
+		BC7B09F32A521EEB00A17106 /* DataTypeIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTypeIdentifier.swift; sourceTree = "<group>"; };
+		BC7B09F42A521EEB00A17106 /* MCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCConstants.swift; sourceTree = "<group>"; };
+		BC7B09F52A521EEB00A17106 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		BC7B09F82A521EEB00A17106 /* Messagable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messagable.swift; sourceTree = "<group>"; };
+		BC7B09F92A521EEB00A17106 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BC7B09FA2A521EEB00A17106 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		BC7B0A072A521F7400A17106 /* Host-Air-Hockey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Host-Air-Hockey-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BC7B0A082A521FBF00A17106 /* Controller-Air-Hockey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Controller-Air-Hockey-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,14 +97,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC7B09B62A521DAC00A17106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7B09C82A521DD100A17106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		767FF4202A36B339000F77F7 = {
 			isa = PBXGroup;
 			children = (
+				BC7B09F12A521EEB00A17106 /* Shared */,
 				767FF42B2A36B339000F77F7 /* Demo Project */,
 				767FF43A2A36B357000F77F7 /* Packages */,
+				BC7B09BA2A521DAC00A17106 /* Controller Air Hockey */,
+				BC7B09CC2A521DD100A17106 /* Host Air Hockey */,
 				767FF42A2A36B339000F77F7 /* Products */,
 				767FF43C2A36B36C000F77F7 /* Frameworks */,
 			);
@@ -49,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				767FF4292A36B339000F77F7 /* Demo Project.app */,
+				BC7B09B92A521DAC00A17106 /* Controller Air Hockey.app */,
+				BC7B09CB2A521DD100A17106 /* Host Air Hockey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,8 +140,10 @@
 		767FF42B2A36B339000F77F7 /* Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				BC7B09872A51B60800A17106 /* VIews */,
+				BC7B09842A51AB2300A17106 /* View Models */,
+				BC7B09832A51AAB800A17106 /* Demo-Project-Info.plist */,
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
-				767FF42E2A36B339000F77F7 /* ContentView.swift */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
 			);
@@ -87,6 +173,143 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC7B09842A51AB2300A17106 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09852A51AB3300A17106 /* CoreMotionManager.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BC7B09872A51B60800A17106 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				BC7B09882A51B61A00A17106 /* MainView.swift */,
+				BC7B098A2A51B63800A17106 /* FallDetectionVIew.swift */,
+				BC7B098C2A51B65200A17106 /* PressureView.swift */,
+				BC7B098E2A51BDE200A17106 /* ActivityMusicView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		BC7B09BA2A521DAC00A17106 /* Controller Air Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B0A082A521FBF00A17106 /* Controller-Air-Hockey-Info.plist */,
+				BC7B09D92A521E7600A17106 /* View Models */,
+				BC7B09DD2A521E7600A17106 /* Views */,
+				BC7B09BB2A521DAC00A17106 /* Controller_Air_HockeyApp.swift */,
+				BC7B09BF2A521DAD00A17106 /* Assets.xcassets */,
+				BC7B09C12A521DAD00A17106 /* Preview Content */,
+			);
+			path = "Controller Air Hockey";
+			sourceTree = "<group>";
+		};
+		BC7B09C12A521DAD00A17106 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09C22A521DAD00A17106 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC7B09CC2A521DD100A17106 /* Host Air Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B0A072A521F7400A17106 /* Host-Air-Hockey-Info.plist */,
+				BC7B09E82A521E8600A17106 /* View Models */,
+				BC7B09E52A521E8600A17106 /* Views */,
+				BC7B09CD2A521DD100A17106 /* Host_Air_HockeyApp.swift */,
+				BC7B09D12A521DD200A17106 /* Assets.xcassets */,
+				BC7B09D32A521DD200A17106 /* Preview Content */,
+			);
+			path = "Host Air Hockey";
+			sourceTree = "<group>";
+		};
+		BC7B09D32A521DD200A17106 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09D42A521DD200A17106 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC7B09D92A521E7600A17106 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09DA2A521E7600A17106 /* ControllerMultipeerHandler.swift */,
+				BC7B09DB2A521E7600A17106 /* ControllerViewModel.swift */,
+				BC7B09DC2A521E7600A17106 /* StartControllerViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BC7B09DD2A521E7600A17106 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09DE2A521E7600A17106 /* StartControllerView.swift */,
+				BC7B09DF2A521E7600A17106 /* ControllerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC7B09E52A521E8600A17106 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09E62A521E8600A17106 /* StartView.swift */,
+				BC7B09E72A521E8600A17106 /* AirHockeyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC7B09E82A521E8600A17106 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09E92A521E8600A17106 /* AirHockeyViewModel.swift */,
+				BC7B09EA2A521E8600A17106 /* StartViewModel.swift */,
+				BC7B09EB2A521E8600A17106 /* MultipeerHandler.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BC7B09F12A521EEB00A17106 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09F22A521EEB00A17106 /* Constants */,
+				BC7B09F62A521EEB00A17106 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BC7B09F22A521EEB00A17106 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09F32A521EEB00A17106 /* DataTypeIdentifier.swift */,
+				BC7B09F42A521EEB00A17106 /* MCConstants.swift */,
+				BC7B09F52A521EEB00A17106 /* GameState.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BC7B09F62A521EEB00A17106 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09F72A521EEB00A17106 /* Communication */,
+				BC7B09F92A521EEB00A17106 /* Player.swift */,
+				BC7B09FA2A521EEB00A17106 /* Position.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC7B09F72A521EEB00A17106 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09F82A521EEB00A17106 /* Messagable.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +333,40 @@
 			productReference = 767FF4292A36B339000F77F7 /* Demo Project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC7B09B82A521DAC00A17106 /* Controller Air Hockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7B09C42A521DAD00A17106 /* Build configuration list for PBXNativeTarget "Controller Air Hockey" */;
+			buildPhases = (
+				BC7B09B52A521DAC00A17106 /* Sources */,
+				BC7B09B62A521DAC00A17106 /* Frameworks */,
+				BC7B09B72A521DAC00A17106 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Controller Air Hockey";
+			productName = "Controller Air Hockey";
+			productReference = BC7B09B92A521DAC00A17106 /* Controller Air Hockey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC7B09CA2A521DD100A17106 /* Host Air Hockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7B09D62A521DD200A17106 /* Build configuration list for PBXNativeTarget "Host Air Hockey" */;
+			buildPhases = (
+				BC7B09C72A521DD100A17106 /* Sources */,
+				BC7B09C82A521DD100A17106 /* Frameworks */,
+				BC7B09C92A521DD100A17106 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Host Air Hockey";
+			productName = "Host Air Hockey";
+			productReference = BC7B09CB2A521DD100A17106 /* Host Air Hockey.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +378,12 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					767FF4282A36B339000F77F7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BC7B09B82A521DAC00A17106 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BC7B09CA2A521DD100A17106 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -139,6 +402,8 @@
 			projectRoot = "";
 			targets = (
 				767FF4282A36B339000F77F7 /* Demo Project */,
+				BC7B09B82A521DAC00A17106 /* Controller Air Hockey */,
+				BC7B09CA2A521DD100A17106 /* Host Air Hockey */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +418,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC7B09B72A521DAC00A17106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B09C32A521DAD00A17106 /* Preview Assets.xcassets in Resources */,
+				BC7B09C02A521DAD00A17106 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7B09C92A521DD100A17106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B09D52A521DD200A17106 /* Preview Assets.xcassets in Resources */,
+				BC7B09D22A521DD200A17106 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -161,7 +444,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				BC7B09892A51B61A00A17106 /* MainView.swift in Sources */,
+				BC7B09862A51AB3300A17106 /* CoreMotionManager.swift in Sources */,
+				BC7B098D2A51B65200A17106 /* PressureView.swift in Sources */,
+				BC7B098B2A51B63800A17106 /* FallDetectionVIew.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
+				BC7B098F2A51BDE200A17106 /* ActivityMusicView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7B09B52A521DAC00A17106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B09E42A521E7600A17106 /* ControllerView.swift in Sources */,
+				BC7B09FD2A521EEB00A17106 /* MCConstants.swift in Sources */,
+				BC7B0A012A521EEB00A17106 /* Messagable.swift in Sources */,
+				BC7B09E12A521E7600A17106 /* ControllerViewModel.swift in Sources */,
+				BC7B0A032A521EEB00A17106 /* Player.swift in Sources */,
+				BC7B09FB2A521EEB00A17106 /* DataTypeIdentifier.swift in Sources */,
+				BC7B0A052A521EEB00A17106 /* Position.swift in Sources */,
+				BC7B09E02A521E7600A17106 /* ControllerMultipeerHandler.swift in Sources */,
+				BC7B09E32A521E7600A17106 /* StartControllerView.swift in Sources */,
+				BC7B09FF2A521EEB00A17106 /* GameState.swift in Sources */,
+				BC7B09E22A521E7600A17106 /* StartControllerViewModel.swift in Sources */,
+				BC7B09BC2A521DAC00A17106 /* Controller_Air_HockeyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7B09C72A521DD100A17106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B09ED2A521E8600A17106 /* AirHockeyView.swift in Sources */,
+				BC7B09FE2A521EEB00A17106 /* MCConstants.swift in Sources */,
+				BC7B0A022A521EEB00A17106 /* Messagable.swift in Sources */,
+				BC7B09EF2A521E8600A17106 /* StartViewModel.swift in Sources */,
+				BC7B0A042A521EEB00A17106 /* Player.swift in Sources */,
+				BC7B09FC2A521EEB00A17106 /* DataTypeIdentifier.swift in Sources */,
+				BC7B09EC2A521E8600A17106 /* StartView.swift in Sources */,
+				BC7B0A062A521EEB00A17106 /* Position.swift in Sources */,
+				BC7B09EE2A521E8600A17106 /* AirHockeyViewModel.swift in Sources */,
+				BC7B0A002A521EEB00A17106 /* GameState.swift in Sources */,
+				BC7B09F02A521E8600A17106 /* MultipeerHandler.swift in Sources */,
+				BC7B09CE2A521DD100A17106 /* Host_Air_HockeyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +616,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use bluetooth?";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Need to use motion?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,8 +648,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use bluetooth?";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Need to use motion?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,6 +669,150 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC7B09C52A521DAD00A17106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Controller Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Controller-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Controller AirHockz";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Controller-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC7B09C62A521DAD00A17106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Controller Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Controller-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Controller AirHockz";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Controller-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC7B09D72A521DD200A17106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Host Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Host-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Host AirHockz";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Host-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BC7B09D82A521DD200A17106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Host Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Host-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Host AirHockz";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Host-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -355,6 +833,24 @@
 			buildConfigurations = (
 				767FF4382A36B33A000F77F7 /* Debug */,
 				767FF4392A36B33A000F77F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7B09C42A521DAD00A17106 /* Build configuration list for PBXNativeTarget "Controller Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7B09C52A521DAD00A17106 /* Debug */,
+				BC7B09C62A521DAD00A17106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7B09D62A521DD200A17106 /* Build configuration list for PBXNativeTarget "Host Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7B09D72A521DD200A17106 /* Debug */,
+				BC7B09D82A521DD200A17106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

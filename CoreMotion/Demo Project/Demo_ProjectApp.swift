@@ -12,9 +12,10 @@ import FrameworkliciousCore
 struct Demo_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            FrameworkliciousApp(framework: .coreMotion) {
-                ContentView()
-            }
+//            FrameworkliciousApp(framework: .coreMotion) {
+//                ContentView()
+//            }
+            MainView()
         }
     }
 }
