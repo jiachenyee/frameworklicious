@@ -1,21 +1,22 @@
 //
 //  ContentView.swift
-//  Demo Project
+//  Rasrace
 //
-//  Created by Jia Chen Yee on 12/06/23.
+//  Created by Muhammad Rezky on 22/06/23.
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ContentView: View {
+    @StateObject var gameScene: GameScene = GameScene(size: UIScreen.main.bounds.size)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        ZStack{
+            PlayView(
+                gameScene: gameScene
+            )
+        }  
     }
 }
 
