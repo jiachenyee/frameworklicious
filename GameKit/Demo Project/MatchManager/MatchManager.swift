@@ -33,7 +33,7 @@ class MatchManager: NSObject, ObservableObject {
     @Published var myAvatar = Image(systemName: "person.crop.circle")
     @Published var opponentAvatar = Image(systemName: "person.crop.circle")
     
-    let totalTime = 15
+    let gameDuration = 15 // in seconds 
     var tapScore: Int = 0
     var otherPlayerScore: Int = 0
     
@@ -111,7 +111,7 @@ class MatchManager: NSObject, ObservableObject {
         isDraw = false
         isLocalPlayerWin = false
         
-        // back in game 
+        // back in game
         gameStatus = .inGame
     }
     

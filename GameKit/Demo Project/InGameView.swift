@@ -17,7 +17,7 @@ struct InGameView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let perSecondWidth = (geometry.size.width - 16) / CGFloat(matchManager.totalTime)
+            let perSecondWidth = (geometry.size.width - 16) / CGFloat(matchManager.gameDuration)
             
             let countDownBarWith = perSecondWidth * CGFloat(timeRemaining)
             
@@ -44,7 +44,7 @@ struct InGameView: View {
                     
                     HStack(alignment: .center) {
                         
-                        Text("gersonjanhuel")
+                        Text("\(matchManager.localPlayer.displayName)")
                             .frame(width: 150, alignment: .trailing)
                             .font(.title3)
                         
@@ -53,7 +53,7 @@ struct InGameView: View {
                             .frame(width: 50)
                         
                         
-                        Text("\(matchManager.otherPlayer?.displayName ?? "opponent")")
+                        Text("\(matchManager.otherPlayer?.displayName ?? "-")")
                             .frame(width: 150, alignment: .leading)
                             .font(.title3)
                     }
@@ -127,7 +127,7 @@ struct InGameView: View {
         
         .onAppear {
             // TODO: Add countdown timer
-            timeRemaining = matchManager.totalTime
+            timeRemaining = matchManager.gameDuration
             
         }
         .onReceive(timer) { time in
