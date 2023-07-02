@@ -74,9 +74,9 @@ struct AirHockeyView: View {
                 Button("Play Again", role: .cancel) {
                     viewModel.resetScore()
                 }
-                Button("Exit", role: .cancel) {
-                    viewModel.endGame()
-                }
+//                Button("Exit", role: .cancel) {
+//                    viewModel.endGame()
+//                }
             }
         }.onAppear {
             UIApplication.shared.isIdleTimerDisabled = true
