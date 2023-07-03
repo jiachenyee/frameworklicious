@@ -40,8 +40,14 @@ struct ContentView: View {
                                         .font(.title2)
                                         .multilineTextAlignment(.leading)
                                         .padding(.bottom, 5)
-                                    Text("Proximity: \(beacon.proximity.rawValue)")
-                                        .font(.body)
+                                    HStack{
+                                        Text("Proximity: \(beacon.proximity.rawValue)")
+                                            .font(.body)
+                                        Spacer()
+                                        
+                                        Text("See more >>")
+                                            .foregroundColor(.blue)
+                                    }
                                 }
                                 .foregroundStyle(.white)
                                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -75,7 +81,7 @@ struct ContentView: View {
                                             .frame(maxWidth: .infinity, alignment: .trailing)
                                         
                                         VStack(alignment: .leading) {
-                                            Text("Frameworklicious")
+                                            Text("Welcome to:")
                                                 .textCase(.uppercase)
                                                 .font(.caption)
                                             Text(framework.name)
