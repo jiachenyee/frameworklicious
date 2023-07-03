@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36320B312A527794006847F7 /* StockAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320B302A527794006847F7 /* StockAsset.swift */; };
+		36320B332A52779E006847F7 /* MyStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320B322A52779E006847F7 /* MyStockView.swift */; };
+		36320B352A5277DB006847F7 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320B342A5277DB006847F7 /* MultipeerSession.swift */; };
+		36320B372A5277F0006847F7 /* AppShorcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320B362A5277F0006847F7 /* AppShorcuts.swift */; };
 		767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */; };
 		767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FF42E2A36B339000F77F7 /* ContentView.swift */; };
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36320B302A527794006847F7 /* StockAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAsset.swift; sourceTree = "<group>"; };
+		36320B322A52779E006847F7 /* MyStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockView.swift; sourceTree = "<group>"; };
+		36320B342A5277DB006847F7 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		36320B362A5277F0006847F7 /* AppShorcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShorcuts.swift; sourceTree = "<group>"; };
+		36320B382A527817006847F7 /* Demo-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Demo-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 		767FF4292A36B339000F77F7 /* Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_ProjectApp.swift; sourceTree = "<group>"; };
 		767FF42E2A36B339000F77F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36320B2F2A52777C006847F7 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				36320B302A527794006847F7 /* StockAsset.swift */,
+				36320B322A52779E006847F7 /* MyStockView.swift */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
 		767FF4202A36B339000F77F7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +74,12 @@
 		767FF42B2A36B339000F77F7 /* Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				36320B382A527817006847F7 /* Demo-Project-Info.plist */,
+				36320B2F2A52777C006847F7 /* Stocks */,
 				767FF42C2A36B339000F77F7 /* Demo_ProjectApp.swift */,
 				767FF42E2A36B339000F77F7 /* ContentView.swift */,
+				36320B342A5277DB006847F7 /* MultipeerSession.swift */,
+				36320B362A5277F0006847F7 /* AppShorcuts.swift */,
 				767FF4302A36B33A000F77F7 /* Assets.xcassets */,
 				767FF4322A36B33A000F77F7 /* Preview Content */,
 			);
@@ -161,6 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				36320B332A52779E006847F7 /* MyStockView.swift in Sources */,
+				36320B372A5277F0006847F7 /* AppShorcuts.swift in Sources */,
+				36320B352A5277DB006847F7 /* MultipeerSession.swift in Sources */,
+				36320B312A527794006847F7 /* StockAsset.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,8 +316,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 73TW42T8UJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,8 +346,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 73TW42T8UJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -27,6 +27,7 @@ struct CameraView: View {
                     ViewfinderView(image: $model.viewfinderImage)
                         .onChange(of: model.camera.result.identifier) { newValue in
                             print("Found: \(newValue)")
+                            
                             if newValue == targetLabel {
                                 isBananaFound = true
                                 playHaptic()

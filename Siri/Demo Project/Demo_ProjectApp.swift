@@ -13,7 +13,7 @@ struct Demo_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             FrameworkliciousApp(framework: .siriKit) {
-                ContentView()
+                ContentView(colorSession: MultipeerSession.shared)
             }
         }
     }
