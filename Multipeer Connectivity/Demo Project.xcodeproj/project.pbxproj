@@ -12,6 +12,40 @@
 		767FF4312A36B33A000F77F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4302A36B33A000F77F7 /* Assets.xcassets */; };
 		767FF4342A36B33A000F77F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */; };
 		767FF43E2A36B36C000F77F7 /* FrameworkliciousCore in Frameworks */ = {isa = PBXBuildFile; productRef = 767FF43D2A36B36C000F77F7 /* FrameworkliciousCore */; };
+		BC7B09AA2A52055F00A17106 /* StartControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A42A52055F00A17106 /* StartControllerView.swift */; };
+		BC7B09AB2A52055F00A17106 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A52A52055F00A17106 /* ControllerView.swift */; };
+		BC7B09AC2A52055F00A17106 /* ControllerMultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A72A52055F00A17106 /* ControllerMultipeerHandler.swift */; };
+		BC7B09AD2A52055F00A17106 /* ControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A82A52055F00A17106 /* ControllerViewModel.swift */; };
+		BC7B09AE2A52055F00A17106 /* StartControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A92A52055F00A17106 /* StartControllerViewModel.swift */; };
+		BC7B09AF2A52056800A17106 /* Air_Hockey_ControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B09A22A52055200A17106 /* Air_Hockey_ControllerApp.swift */; };
+		BC7B09B02A52056A00A17106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09A12A52055200A17106 /* Assets.xcassets */; };
+		BC7B09B42A5205C200A17106 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7B09B32A5205C200A17106 /* Preview Assets.xcassets */; };
+		BCB21BEB2A4FEDF200F471C0 /* DataTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BCF2A4FEDF200F471C0 /* DataTypeIdentifier.swift */; };
+		BCB21BEC2A4FEDF200F471C0 /* MCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD02A4FEDF200F471C0 /* MCConstants.swift */; };
+		BCB21BED2A4FEDF200F471C0 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD12A4FEDF200F471C0 /* GameState.swift */; };
+		BCB21BEE2A4FEDF200F471C0 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD42A4FEDF200F471C0 /* Messagable.swift */; };
+		BCB21BEF2A4FEDF200F471C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD52A4FEDF200F471C0 /* Player.swift */; };
+		BCB21BF02A4FEDF200F471C0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD62A4FEDF200F471C0 /* Position.swift */; };
+		BCB21C002A4FEE3400F471C0 /* Host_Air_HockeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BFF2A4FEE3400F471C0 /* Host_Air_HockeyApp.swift */; };
+		BCB21C042A4FEE3500F471C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB21C032A4FEE3500F471C0 /* Assets.xcassets */; };
+		BCB21C072A4FEE3500F471C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB21C062A4FEE3500F471C0 /* Preview Assets.xcassets */; };
+		BCB21C232A4FEFBA00F471C0 /* DataTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BCF2A4FEDF200F471C0 /* DataTypeIdentifier.swift */; };
+		BCB21C242A4FEFBA00F471C0 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD12A4FEDF200F471C0 /* GameState.swift */; };
+		BCB21C252A4FEFBA00F471C0 /* MCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD02A4FEDF200F471C0 /* MCConstants.swift */; };
+		BCB21C262A4FEFBC00F471C0 /* DataTypeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BCF2A4FEDF200F471C0 /* DataTypeIdentifier.swift */; };
+		BCB21C272A4FEFBC00F471C0 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD12A4FEDF200F471C0 /* GameState.swift */; };
+		BCB21C282A4FEFBC00F471C0 /* MCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD02A4FEDF200F471C0 /* MCConstants.swift */; };
+		BCB21C292A4FEFC800F471C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD52A4FEDF200F471C0 /* Player.swift */; };
+		BCB21C2A2A4FEFC800F471C0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD62A4FEDF200F471C0 /* Position.swift */; };
+		BCB21C2B2A4FEFC900F471C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD52A4FEDF200F471C0 /* Player.swift */; };
+		BCB21C2C2A4FEFC900F471C0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD62A4FEDF200F471C0 /* Position.swift */; };
+		BCB21C2D2A4FEFCC00F471C0 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD42A4FEDF200F471C0 /* Messagable.swift */; };
+		BCB21C2E2A4FEFCC00F471C0 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD42A4FEDF200F471C0 /* Messagable.swift */; };
+		BCB21C302A4FF17700F471C0 /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BDB2A4FEDF200F471C0 /* MultipeerHandler.swift */; };
+		BCB21C312A4FF17700F471C0 /* AirHockeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BD92A4FEDF200F471C0 /* AirHockeyViewModel.swift */; };
+		BCB21C322A4FF17700F471C0 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BDA2A4FEDF200F471C0 /* StartViewModel.swift */; };
+		BCB21C332A4FF1C200F471C0 /* AirHockeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BE22A4FEDF200F471C0 /* AirHockeyView.swift */; };
+		BCB21C342A4FF1C200F471C0 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB21BE12A4FEDF200F471C0 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +55,32 @@
 		767FF4302A36B33A000F77F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767FF4332A36B33A000F77F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		767FF43B2A36B357000F77F7 /* FrameworkliciousCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrameworkliciousCore; path = ../FrameworkliciousCore; sourceTree = "<group>"; };
+		BC7B09A12A52055200A17106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Air Hockey Controller/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		BC7B09A22A52055200A17106 /* Air_Hockey_ControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Air_Hockey_ControllerApp.swift; path = "Air Hockey Controller/Air_Hockey_ControllerApp.swift"; sourceTree = SOURCE_ROOT; };
+		BC7B09A42A52055F00A17106 /* StartControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartControllerView.swift; sourceTree = "<group>"; };
+		BC7B09A52A52055F00A17106 /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		BC7B09A72A52055F00A17106 /* ControllerMultipeerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerMultipeerHandler.swift; sourceTree = "<group>"; };
+		BC7B09A82A52055F00A17106 /* ControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewModel.swift; sourceTree = "<group>"; };
+		BC7B09A92A52055F00A17106 /* StartControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartControllerViewModel.swift; sourceTree = "<group>"; };
+		BC7B09B32A5205C200A17106 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCB21BCF2A4FEDF200F471C0 /* DataTypeIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTypeIdentifier.swift; sourceTree = "<group>"; };
+		BCB21BD02A4FEDF200F471C0 /* MCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCConstants.swift; sourceTree = "<group>"; };
+		BCB21BD12A4FEDF200F471C0 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		BCB21BD42A4FEDF200F471C0 /* Messagable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messagable.swift; sourceTree = "<group>"; };
+		BCB21BD52A4FEDF200F471C0 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BCB21BD62A4FEDF200F471C0 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		BCB21BD92A4FEDF200F471C0 /* AirHockeyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirHockeyViewModel.swift; sourceTree = "<group>"; };
+		BCB21BDA2A4FEDF200F471C0 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		BCB21BDB2A4FEDF200F471C0 /* MultipeerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerHandler.swift; sourceTree = "<group>"; };
+		BCB21BE12A4FEDF200F471C0 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		BCB21BE22A4FEDF200F471C0 /* AirHockeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirHockeyView.swift; sourceTree = "<group>"; };
+		BCB21BFD2A4FEE3400F471C0 /* Host Air Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Host Air Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB21BFF2A4FEE3400F471C0 /* Host_Air_HockeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host_Air_HockeyApp.swift; sourceTree = "<group>"; };
+		BCB21C032A4FEE3500F471C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCB21C062A4FEE3500F471C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCB21C0F2A4FEE5700F471C0 /* Controller Air Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Controller Air Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB21C352A4FF2D900F471C0 /* Host-Air-Hockey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Host-Air-Hockey-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BCB21C362A4FF30300F471C0 /* Controller-Air-Hockey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Controller-Air-Hockey-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +92,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB21BFA2A4FEE3400F471C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB21C0C2A4FEE5700F471C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				767FF42B2A36B339000F77F7 /* Demo Project */,
+				BCB21BFE2A4FEE3400F471C0 /* Host Air Hockey */,
+				BCB21C102A4FEE5700F471C0 /* Controller Air Hockey */,
+				BCB21BCD2A4FEDF200F471C0 /* Shared */,
 				767FF43A2A36B357000F77F7 /* Packages */,
 				767FF42A2A36B339000F77F7 /* Products */,
 				767FF43C2A36B36C000F77F7 /* Frameworks */,
@@ -49,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				767FF4292A36B339000F77F7 /* Demo Project.app */,
+				BCB21BFD2A4FEE3400F471C0 /* Host Air Hockey.app */,
+				BCB21C0F2A4FEE5700F471C0 /* Controller Air Hockey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +166,126 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC7B09A32A52055F00A17106 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09A42A52055F00A17106 /* StartControllerView.swift */,
+				BC7B09A52A52055F00A17106 /* ControllerView.swift */,
+			);
+			name = Views;
+			path = "Air Hockey Controller/Views";
+			sourceTree = SOURCE_ROOT;
+		};
+		BC7B09A62A52055F00A17106 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09A72A52055F00A17106 /* ControllerMultipeerHandler.swift */,
+				BC7B09A82A52055F00A17106 /* ControllerViewModel.swift */,
+				BC7B09A92A52055F00A17106 /* StartControllerViewModel.swift */,
+			);
+			name = "View Models";
+			path = "Air Hockey Controller/View Models";
+			sourceTree = SOURCE_ROOT;
+		};
+		BC7B09B22A5205C200A17106 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09B32A5205C200A17106 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "Air Hockey Controller/Preview Content";
+			sourceTree = SOURCE_ROOT;
+		};
+		BCB21BCD2A4FEDF200F471C0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BCE2A4FEDF200F471C0 /* Constants */,
+				BCB21BD22A4FEDF200F471C0 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BCB21BCE2A4FEDF200F471C0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BCF2A4FEDF200F471C0 /* DataTypeIdentifier.swift */,
+				BCB21BD02A4FEDF200F471C0 /* MCConstants.swift */,
+				BCB21BD12A4FEDF200F471C0 /* GameState.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BCB21BD22A4FEDF200F471C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BD32A4FEDF200F471C0 /* Communication */,
+				BCB21BD52A4FEDF200F471C0 /* Player.swift */,
+				BCB21BD62A4FEDF200F471C0 /* Position.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCB21BD32A4FEDF200F471C0 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BD42A4FEDF200F471C0 /* Messagable.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		BCB21BD82A4FEDF200F471C0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BD92A4FEDF200F471C0 /* AirHockeyViewModel.swift */,
+				BCB21BDA2A4FEDF200F471C0 /* StartViewModel.swift */,
+				BCB21BDB2A4FEDF200F471C0 /* MultipeerHandler.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BCB21BE02A4FEDF200F471C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21BE12A4FEDF200F471C0 /* StartView.swift */,
+				BCB21BE22A4FEDF200F471C0 /* AirHockeyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB21BFE2A4FEE3400F471C0 /* Host Air Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21C352A4FF2D900F471C0 /* Host-Air-Hockey-Info.plist */,
+				BCB21BD82A4FEDF200F471C0 /* View Models */,
+				BCB21BE02A4FEDF200F471C0 /* Views */,
+				BCB21BFF2A4FEE3400F471C0 /* Host_Air_HockeyApp.swift */,
+				BCB21C032A4FEE3500F471C0 /* Assets.xcassets */,
+				BCB21C052A4FEE3500F471C0 /* Preview Content */,
+			);
+			path = "Host Air Hockey";
+			sourceTree = "<group>";
+		};
+		BCB21C052A4FEE3500F471C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCB21C062A4FEE3500F471C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCB21C102A4FEE5700F471C0 /* Controller Air Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B09A62A52055F00A17106 /* View Models */,
+				BC7B09A32A52055F00A17106 /* Views */,
+				BC7B09A22A52055200A17106 /* Air_Hockey_ControllerApp.swift */,
+				BC7B09A12A52055200A17106 /* Assets.xcassets */,
+				BCB21C362A4FF30300F471C0 /* Controller-Air-Hockey-Info.plist */,
+				BC7B09B22A5205C200A17106 /* Preview Content */,
+			);
+			path = "Controller Air Hockey";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +309,40 @@
 			productReference = 767FF4292A36B339000F77F7 /* Demo Project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BCB21BFC2A4FEE3400F471C0 /* Host Air Hockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB21C082A4FEE3500F471C0 /* Build configuration list for PBXNativeTarget "Host Air Hockey" */;
+			buildPhases = (
+				BCB21BF92A4FEE3400F471C0 /* Sources */,
+				BCB21BFA2A4FEE3400F471C0 /* Frameworks */,
+				BCB21BFB2A4FEE3400F471C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Host Air Hockey";
+			productName = "Host Air Hockey";
+			productReference = BCB21BFD2A4FEE3400F471C0 /* Host Air Hockey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCB21C0E2A4FEE5700F471C0 /* Controller Air Hockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB21C1A2A4FEE5800F471C0 /* Build configuration list for PBXNativeTarget "Controller Air Hockey" */;
+			buildPhases = (
+				BCB21C0B2A4FEE5700F471C0 /* Sources */,
+				BCB21C0C2A4FEE5700F471C0 /* Frameworks */,
+				BCB21C0D2A4FEE5700F471C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Controller Air Hockey";
+			productName = "Controller Air Hockey";
+			productReference = BCB21C0F2A4FEE5700F471C0 /* Controller Air Hockey.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +354,12 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					767FF4282A36B339000F77F7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BCB21BFC2A4FEE3400F471C0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BCB21C0E2A4FEE5700F471C0 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -139,6 +378,8 @@
 			projectRoot = "";
 			targets = (
 				767FF4282A36B339000F77F7 /* Demo Project */,
+				BCB21BFC2A4FEE3400F471C0 /* Host Air Hockey */,
+				BCB21C0E2A4FEE5700F471C0 /* Controller Air Hockey */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +394,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB21BFB2A4FEE3400F471C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB21C072A4FEE3500F471C0 /* Preview Assets.xcassets in Resources */,
+				BCB21C042A4FEE3500F471C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB21C0D2A4FEE5700F471C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B09B02A52056A00A17106 /* Assets.xcassets in Resources */,
+				BC7B09B42A5205C200A17106 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -160,8 +419,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB21BF02A4FEDF200F471C0 /* Position.swift in Sources */,
+				BCB21BEB2A4FEDF200F471C0 /* DataTypeIdentifier.swift in Sources */,
 				767FF42F2A36B339000F77F7 /* ContentView.swift in Sources */,
+				BCB21BEE2A4FEDF200F471C0 /* Messagable.swift in Sources */,
+				BCB21BEF2A4FEDF200F471C0 /* Player.swift in Sources */,
 				767FF42D2A36B339000F77F7 /* Demo_ProjectApp.swift in Sources */,
+				BCB21BEC2A4FEDF200F471C0 /* MCConstants.swift in Sources */,
+				BCB21BED2A4FEDF200F471C0 /* GameState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB21BF92A4FEE3400F471C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB21C2C2A4FEFC900F471C0 /* Position.swift in Sources */,
+				BCB21C312A4FF17700F471C0 /* AirHockeyViewModel.swift in Sources */,
+				BCB21C262A4FEFBC00F471C0 /* DataTypeIdentifier.swift in Sources */,
+				BCB21C342A4FF1C200F471C0 /* StartView.swift in Sources */,
+				BCB21C332A4FF1C200F471C0 /* AirHockeyView.swift in Sources */,
+				BCB21C272A4FEFBC00F471C0 /* GameState.swift in Sources */,
+				BCB21C282A4FEFBC00F471C0 /* MCConstants.swift in Sources */,
+				BCB21C322A4FF17700F471C0 /* StartViewModel.swift in Sources */,
+				BCB21C2B2A4FEFC900F471C0 /* Player.swift in Sources */,
+				BCB21C002A4FEE3400F471C0 /* Host_Air_HockeyApp.swift in Sources */,
+				BCB21C302A4FF17700F471C0 /* MultipeerHandler.swift in Sources */,
+				BCB21C2D2A4FEFCC00F471C0 /* Messagable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB21C0B2A4FEE5700F471C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB21C2E2A4FEFCC00F471C0 /* Messagable.swift in Sources */,
+				BCB21C292A4FEFC800F471C0 /* Player.swift in Sources */,
+				BCB21C2A2A4FEFC800F471C0 /* Position.swift in Sources */,
+				BCB21C232A4FEFBA00F471C0 /* DataTypeIdentifier.swift in Sources */,
+				BC7B09AA2A52055F00A17106 /* StartControllerView.swift in Sources */,
+				BCB21C242A4FEFBA00F471C0 /* GameState.swift in Sources */,
+				BC7B09AB2A52055F00A17106 /* ControllerView.swift in Sources */,
+				BC7B09AC2A52055F00A17106 /* ControllerMultipeerHandler.swift in Sources */,
+				BC7B09AD2A52055F00A17106 /* ControllerViewModel.swift in Sources */,
+				BCB21C252A4FEFBA00F471C0 /* MCConstants.swift in Sources */,
+				BC7B09AE2A52055F00A17106 /* StartControllerViewModel.swift in Sources */,
+				BC7B09AF2A52056800A17106 /* Air_Hockey_ControllerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +641,146 @@
 			};
 			name = Release;
 		};
+		BCB21C092A4FEE3500F471C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Host Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Host-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Host-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BCB21C0A2A4FEE3500F471C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Host Air Hockey/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Host-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Host-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		BCB21C1B2A4FEE5800F471C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Air Hockey Controller/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Controller-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Controller-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BCB21C1C2A4FEE5800F471C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Air Hockey Controller/Preview Content\"";
+				DEVELOPMENT_TEAM = 3464AT77WW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Controller-Air-Hockey-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Air Hockey needs your network to start sessions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muhirfan.Controller-Air-Hockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +798,24 @@
 			buildConfigurations = (
 				767FF4382A36B33A000F77F7 /* Debug */,
 				767FF4392A36B33A000F77F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB21C082A4FEE3500F471C0 /* Build configuration list for PBXNativeTarget "Host Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB21C092A4FEE3500F471C0 /* Debug */,
+				BCB21C0A2A4FEE3500F471C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB21C1A2A4FEE5800F471C0 /* Build configuration list for PBXNativeTarget "Controller Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB21C1B2A4FEE5800F471C0 /* Debug */,
+				BCB21C1C2A4FEE5800F471C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

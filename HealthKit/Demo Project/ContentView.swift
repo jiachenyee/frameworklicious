@@ -59,12 +59,6 @@ struct ContentView: View {
                 .sheet(isPresented: $isModal){
                     GraphView(isModal: self.$isModal, steps: steps)
                 }
-//                NavigationLink("Weekly Summary"){
-//                    GraphView(steps: steps)
-//                }
-//                .buttonStyle(.borderedProminent)
-//                .controlSize(.large)
-//                .tint(.blueColor)
             }
             .padding()
             .background(Color.backgroundGray)

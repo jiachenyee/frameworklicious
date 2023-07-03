@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, please run on other target (Host Air Hockey for ipad and Controller Air Hockey for iOS) ")
         }
         .padding()
     }
